@@ -2,7 +2,8 @@ body {
     position: relative;
     font-family: Roboto, Roboto, Helvetica, Arial, sans-serif;
     background-color: #fafaff;
-    content: '';
+    content: 'хуйня';
+
 }
 
 @keyframes animationheaderfixed {
