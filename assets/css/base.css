@@ -1464,6 +1464,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 .cards-block-row {
     display: flex;
+    overflow: hidden;
 }
 
 .cards-block {
@@ -1478,6 +1479,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     padding: 0 55px;
     position: relative;
     min-height: 150px;
+    width: 240px;
 }
 .cards-block-picture-boobkmark {
     background-color: #ecebe4;
