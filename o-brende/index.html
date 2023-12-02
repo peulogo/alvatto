@@ -1,626 +1,95 @@
-<!DOCTYPE html>
-<html lang="ru">
-
-<head>
-    <!--<base href="https://alvatto.ru/">-->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
-    <link rel="icon" href="../assets/images/favicon.ico" type="image/vnd.microsoft.icon">
-    <!-- <link rel="stylesheet" href="/assets/css/daterangepicker.css"> -->
-    <link rel="stylesheet" href="../assets/css/base.css">
-    <title>О бренде</title>
-<link rel="stylesheet" href="../assets/components/minishop2/css/web/default%EF%B9%96v=667ec14321.css" type="text/css" />
-<link rel="stylesheet" href="../assets/components/minishop2/css/web/lib/jquery.jgrowl.min.css" type="text/css" />
-<script>miniShop2Config = {"close_all_message":"\u0437\u0430\u043a\u0440\u044b\u0442\u044c \u0432\u0441\u0435","cssUrl":"\/assets\/components\/minishop2\/css\/web\/","jsUrl":"\/assets\/components\/minishop2\/js\/web\/","actionUrl":"\/assets\/components\/minishop2\/action.php","ctx":"web","price_format":[2,"."," "],"price_format_no_zeros":true,"weight_format":[3,"."," "],"weight_format_no_zeros":true};</script>
-<link rel="stylesheet" href="../assets/components/ajaxform/css/default.css" type="text/css" />
-</head>
-
-<body>
-    
-    <!-- Modal menu-->
-<div class="modal fade" id="exampleModalMenu" tabindex="-1" aria-labelledby="exampleModalLabelMenu" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title fs-3" id="exampleModalLabel">Меню </h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-          <div class="header-modal-menu-item">
-                                    <ul class="header-modal-menu-ul">
-                                    <li class="header-modal-menu-li font-18"><a href="../katalog/kofemashinyi/index.html" class="header-modal-menu-href">Кофемашины</a></li>
-                                    <li class="header-modal-menu-li font-18"><a href="../katalog/aksessuary-i-komplektuyushchie/index.html" class="header-modal-menu-href">Аксессуары и комплектующие</a></li>
-                                    <li class="header-modal-menu-li font-18"><a href="../katalog/kofe/index.html" class="header-modal-menu-href">Кофе</a></li>
-                                </ul>
-                                <ul class="header-modal-menu-ul">
-                                    <li class="header-modal-menu-li font-18"><a href="index.html" class="header-modal-menu-href">О бренде</a></li>
-                                    <li class="header-modal-menu-li font-18"><a href="../service/index.html" class="header-modal-menu-href">Сервис</a></li>
-                                    <li class="header-modal-menu-li font-18"><a href="../kontaktyi/index.html" class="header-modal-menu-href">Контакты</a></li>
-                                    <li class="header-modal-menu-li font-18"><a href="../poleznaya-informacziya/index.html" class="header-modal-menu-href">Полезная информация</a></a></li>
-                                </ul>
-                                <!--<ul class="header-modal-menu-ul11">
-                                    <!--<li class="header-modal-menu-li font-18"><a href="" class="header-modal-menu-href">Статьи</a></li>-->
-                                <!--<li class="header-modal-menu-li font-18"><a href="politika-konfidencialnosti/" class="header-modal-menu-href">Политика конфиденциальности</a></li>-->
-                                <!--<li class="header-modal-menu-li font-18"><a href="polzovatelskoe-soglashenie/" class="header-modal-menu-href">Пользовательское соглашение</a></li>-->
-                                <!--<li class="header-modal-menu-li font-18"><a href="publichnaya-oferta/" class="header-modal-menu-href">Публичная оферта</a></li>-->
-                                <!--</ul>-->
-                              <!--   <div class="header-modal-menu-ul">
-                                      <p class="header-modal-contact-telephon-p font-18"><a href="tel:88009999999" class="header-modal-menu-href">8 800 999 99 99</a></p>
-                              </div> -->
-                                 <div class="header-modal-menu-ul11">
-                                     <p class="header-modal-contact-description-p font-18">
-                                            Время работы: с 09:00 до 18:00
-                                        </p> 
-                                 </div>
-                                 <div class="header-modal-menu-ul">
-                                      <div class="header-modal-contact-action">
-                                          <div class="header-modal-contact-action-icon">
-                                             <p class="header-modal-contact-telephon-p font-18"><a href="tel:+74998428888" class="header-modal-menu-href">+7 499 842 88 88</a></p>
-                                          </div>
-                                        <div class="header-modal-contact-action-icon">
-                                            <svg id="telegram" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20" width="20" height="20">
-                                                        <path d="M10 20c5.523 0 10-4.477 10-10S15.523 0 10 0 0 4.477 0 10s4.477 10 10 10z" fill="#64A5F0"></path>
-                                                        <path d="M3.724 10.49c1.17-.645 2.474-1.182 3.693-1.722a192.13 192.13 0 0 1 6.33-2.564c.415-.138 1.16-.273 1.232.34-.04.87-.206 1.732-.318 2.595-.286 1.897-.617 3.788-.94 5.68-.11.63-.9.957-1.405.553-1.213-.82-2.437-1.63-3.635-2.47-.393-.4-.028-.972.322-1.257 1-.985 2.06-1.822 3.008-2.858.255-.618-.5-.098-.75.062-1.368.943-2.703 1.944-4.146 2.773-.737.405-1.596.06-2.333-.168-.66-.273-1.628-.55-1.06-.966z" fill="#fff"></path>
-                                                    </svg>
-                                        </div>
-                                        <div class="header-modal-contact-action-icon">
-                                            <svg id="whatsapp" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 21" width="20" height="21">
-                                                        <path d="M17.086 2.907A9.918 9.918 0 0 0 10.042 0C4.552 0 .086 4.446.084 9.91a9.86 9.86 0 0 0 1.33 4.956L0 20l5.28-1.377a9.987 9.987 0 0 0 4.758 1.207h.004c5.488 0 9.956-4.447 9.958-9.91a9.83 9.83 0 0 0-2.914-7.013zm-7.044 15.25h-.003a8.295 8.295 0 0 1-4.214-1.15l-.302-.178-3.133.817.837-3.04-.197-.312A8.19 8.19 0 0 1 1.765 9.91c.002-4.54 3.714-8.236 8.28-8.236 2.21 0 4.29.86 5.852 2.416a8.17 8.17 0 0 1 2.422 5.828c-.003 4.542-3.716 8.238-8.278 8.238z" fill="#E0E0E0"></path>
-                                                        <path d="M.457 19.43l1.348-4.9A9.408 9.408 0 0 1 .537 9.802C.54 4.587 4.802.344 10.04.344c2.542 0 4.928.986 6.722 2.774a9.378 9.378 0 0 1 2.78 6.69c-.002 5.216-4.265 9.46-9.502 9.46h-.004a9.533 9.533 0 0 1-4.54-1.152L.455 19.43z" fill="#65CF72"></path>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.58 5.703c-.183-.408-.377-.416-.553-.423-.143-.006-.307-.006-.47-.006-.165 0-.43.062-.657.307-.225.246-.86.838-.86 2.043s.88 2.37 1.004 2.532c.123.164 1.7 2.715 4.2 3.697 2.08.815 2.502.653 2.953.612.45-.04 1.455-.592 1.66-1.164.205-.572.205-1.062.143-1.164-.06-.102-.225-.163-.47-.286-.247-.122-1.456-.715-1.682-.796-.225-.082-.39-.123-.553.122-.164.245-.635.797-.78.96-.142.164-.286.184-.532.062-.246-.123-1.038-.382-1.978-1.216-.73-.65-1.225-1.45-1.368-1.695-.144-.245-.016-.378.108-.5.11-.11.246-.286.37-.43.122-.142.163-.244.245-.407.082-.164.04-.307-.02-.43-.062-.122-.54-1.333-.76-1.817z" fill="#fff"></path>
-                                                        <path d="M17.004 2.875A9.804 9.804 0 0 0 10.04.002C4.616.002.2 4.397.198 9.8c0 1.725.453 3.41 1.314 4.897L.116 19.773l5.218-1.362a9.872 9.872 0 0 0 4.704 1.194h.004c5.426 0 9.843-4.396 9.845-9.797a9.716 9.716 0 0 0-2.88-6.932zM10.04 17.95h-.002a8.2 8.2 0 0 1-4.164-1.136l-.3-.177-3.096.81.827-3.006-.195-.307A8.095 8.095 0 0 1 1.86 9.8c0-4.49 3.67-8.143 8.184-8.143 2.186 0 4.24.85 5.785 2.388a8.076 8.076 0 0 1 2.393 5.76c-.002 4.49-3.672 8.144-8.182 8.144z" fill="#fff"></path>
-                                                    </svg>
-                                        </div>
-                                    </div> 
-                                 </div>
-             </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-<!-- Modal one click-->
-<div class="modal fade" id="exampleModalOneClick" tabindex="-1" aria-labelledby="exampleModalLabelOneClick" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title fs-6" id="exampleModalLabel">Купить в один клик О бренде</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form action="" method="post" class="modal-form-out ajax_form af_example">
-    <input type="hidden" name="modalformoneclick" value="1">
-    <input type="hidden" name="prod_img" value="https://alvatto.ru/">
-    <input type="hidden" name="prod_name" value="О бренде">
-    <input type="hidden" name="prod_price" value="">
-    <input type="hidden" name="url_page" value="https://alvatto.ru/o-brende/">
-
-
-     <div class="form-group">
-            <input type="image"  name="image" value="" src="" placeholder="" class="form-control"/>
-    </div>
-
-    <div class="form-group">
-        <label class="control-label" for="af_name">Имя *</label>
-        <div class="controls">
-            <input type="text" id="af_name" name="name" value="" placeholder="ваше имя" class="form-control" required/>
-            <span class="error_name"></span>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="control-label" for="af_phone-consult">Телефон: *</label>
-        <div class="controls">
-            <input type="text" id="af_phone-consult" name="phone" value="" placeholder="ваш телефон" class="form-control form-phone" required/>
-            <span class="error_phone"></span>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="control-label" for="af_message">Сообщение</label>
-        <div class="controls">
-            <textarea id="af_message" name="message" class="form-control" rows="3" placeholder="Хочу купить О бренде...."></textarea>
-            <span class="error_message"></span>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <div class="controls">
-            <!--<button type="reset" class="btn btn-default">Очистить</button>-->
-             <button type="submit" class="btn btn-primary bg-color-orange" style="border: none;">Отправить</button>
-        </div>
-    </div>
-
-    
-    
-
-	<input type="hidden" name="af_action" value="a51b37f9e0d56e832caabc45260942d9" />
-</form>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-<!-- Modal consult product-->
-<div class="modal fade" id="exampleModalConsult" tabindex="-1" aria-labelledby="exampleModalLabelConsult" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title fs-6" id="exampleModalLabel">Консультация </h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-              <form action="" method="post" class="modal-form-out ajax_form af_example">
-    <input type="hidden" name="modalformoneclick" value="1">
-    <input type="hidden" name="prod_img" value="https://alvatto.ru/">
-    <input type="hidden" name="prod_name" value="О бренде">
-    <input type="hidden" name="prod_price" value="">
-    <input type="hidden" name="url_page" value="https://alvatto.ru/o-brende/">
-
-
-     <div class="form-group">
-            <input type="image"  name="image" value="" src="" placeholder="" class="form-control"/>
-    </div>
-
-    <div class="form-group">
-        <label class="control-label" for="af_name">Имя *</label>
-        <div class="controls">
-            <input type="text" id="af_name" name="name" value="" placeholder="ваше имя" class="form-control" required/>
-            <span class="error_name"></span>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="control-label" for="af_phone-consult">Телефон: *</label>
-        <div class="controls">
-            <input type="text" id="af_phone-consult" name="phone" value="" placeholder="ваш телефон" class="form-control form-phone" required/>
-            <span class="error_phone"></span>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="control-label" for="af_message">Сообщение</label>
-        <div class="controls">
-            <textarea id="af_message" name="message" class="form-control" rows="3" placeholder="Хочу купить О бренде...."></textarea>
-            <span class="error_message"></span>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <div class="controls">
-            <!--<button type="reset" class="btn btn-default">Очистить</button>-->
-             <button type="submit" class="btn btn-primary bg-color-orange" style="border: none;">Отправить</button>
-        </div>
-    </div>
-
-    
-    
-
-	<input type="hidden" name="af_action" value="96982cfb430d590e7694fbca2832551b" />
-</form>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal Applic-->
-<div class="modal fade" id="exampleModalApplic" tabindex="-1" aria-labelledby="exampleModalLabelApplic" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title fs-6" id="exampleModalLabel">Оставить заявку О бренде</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form action="" method="post" class="modal-form-out ajax_form af_example">
-    <input type="hidden" name="modalformapplic" value="1">
-    <input type="hidden" name="prod_img" value="https://alvatto.ru/">
-    <input type="hidden" name="prod_name" value="О бренде">
-    <input type="hidden" name="prod_price" value="">
-    <input type="hidden" name="url_page" value="https://alvatto.ru/o-brende/">
-
-
-     <div class="form-group">
-            <input type="image"  name="image" value="" src="" placeholder="" class="form-control"/>
-    </div>
-
-    <div class="form-group">
-        <label class="control-label" for="af_name">Имя *</label>
-        <div class="controls">
-            <input type="text" id="af_name" name="name" value="" placeholder="ваше имя" class="form-control" required/>
-            <span class="error_name"></span>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="control-label" for="af_phone-consult">Телефон: *</label>
-        <div class="controls">
-            <input type="text" id="af_phone-consult" name="phone" value="" placeholder="ваш телефон" class="form-control form-phone" required/>
-            <span class="error_phone"></span>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="control-label" for="af_message">Сообщение</label>
-        <div class="controls">
-            <textarea id="af_message" name="message" class="form-control" rows="3" placeholder="Примите заявку на О бренде...."></textarea>
-            <span class="error_message"></span>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <div class="controls">
-            <!--<button type="reset" class="btn btn-default">Очистить</button>-->
-             <button type="submit" class="btn btn-primary bg-color-orange" style="border: none;">Оставить заявку</button>
-        </div>
-    </div>
-
-    
-    
-
-	<input type="hidden" name="af_action" value="f59ec914373d3ca1a4d47e3361e2463e" />
-</form>
-      </div>
-    </div>
-  </div>
-</div>
-    
-    <!-- header start -->
-    <header class="header-out header-other">
-     <div class="header-fixed">
-        <div class="container container-1440">
-            <div class="header-item">
-               <!--  <div class="header-logo-out"> -->
-                   <!--  <div class="header-logo-item">
-                       <a class="d-block" href="/">
-                       <img src="assets/img/header-logo-white.svg" alt="header-logo-white" class="header-logo-image img-fluid">
-                       </a>
-                   </div> -->
-              <!--   </div> -->
-                <div class="header-burger-menu-out">
-                     <div class="header-logo-item">
-                        <a class="d-block" href="../index.html">
-                        <img src="../assets/img/header-logo-black.svg" alt="header-logo-white" class="header-logo-image img-fluid">
-                        </a>
-                    </div>
-                    <button class="header-burger-menu-item" id="btn-open11" data-bs-toggle="modal" data-bs-target="#exampleModalMenu">
-                       <svg viewBox="0 0 140 80" width="40" height="40">
-                            <rect width="140" height="15" rx="10"></rect>
-                            <rect y="30" width="140" height="15" rx="10"></rect>
-                            <rect y="60" width="140" height="15" rx="10"></rect>
-                        </svg>
-                    </button>
-                </div>
-                <div class="header-list-link-out">
-                    <div class="header-list-link-item">
-                        <ul class="header-list-link-ul"><li class="header-list-link-li font-18"><a class="header-list-link-href" href="../katalog/index.html" >Каталог</a></li><li class="header-list-link-li font-18"><a class="header-list-link-href" href="index.html" >О бренде</a></li><li class="header-list-link-li font-18"><a class="header-list-link-href" href="../service/index.html" >Сервис</a></li><li class="header-list-link-li font-18"><a class="header-list-link-href" href="../kontaktyi/index.html" >Контакты</a></li><li class="header-list-link-li font-18"><a class="header-list-link-href" href="../poleznaya-informacziya/index.html" >Полезная информация</a></li></ul>
-                        
-                       <!--  <ul class="header-list-link-ul">
-                           <li class="header-list-link-li font-18"><a href="" class="header-list-link-href">Каталог</a></li>
-                           <li class="header-list-link-li font-18"><a href="" class="header-list-link-href">О бренде</a></li>
-                           <li class="header-list-link-li font-18"><a href="" class="header-list-link-href">Сервис</a></li>
-                           <li class="header-list-link-li font-18"><a href="" class="header-list-link-href">Контакты</a></li>
-                           <li class="header-list-link-li font-18"><a href="" class="header-list-link-href">Полезная информация</a></li>
-                       </ul> -->
-                    </div>
-                </div>
-                <div class="header-list-icon-out">
-                    <div class="header-list-icon-item">
-                        
-                        <div class="header-list-icon-action-out">
-                            <div class="header-list-icon-action-item">
-                                <a href="../balket/index.html" class="d-block">
- <div class="header-list-icon-action-href msMiniCart" id="basket">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49A.996.996 0 0 0 20.01 4H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
-                                    </svg>
-                                </div>
-                                <div class="quantity-product-in-basket not_empty">
-                                    <span class="quantity-product-in-basket-span ms2_total_count">0</span>
-                                </div>
-</a>
-                            </div>
-                            <div class="header-list-icon-action-item">
-                            </div>
-                            <div class="header-list-icon-action-item">
-                                <div class="header-list-icon-action-href">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/><path d="M7 12h2v5H7zm8-5h2v10h-2zm-4 7h2v3h-2zm0-4h2v2h-2z"/>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                    </div>
-                </div>
-                <div class="header-contact-out">
-                    <div class="header-contact-item">
-                        <a href="tel:88009999999" class="header-contact-href font-18">8 499 842 88 88</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="header-modal-out" id="modal-block">
-            <div class="container container-1440">
-                <div class="header-modal-item">
-                    <div class="header-modal-block">
-                        <div class="header-modal-menu-out">
-                            <div class="header-modal-menu-item">
-                                    <ul class="header-modal-menu-ul">
-                                    <li class="header-modal-menu-li font-18"><a href="../katalog/kofemashinyi/index.html" class="header-modal-menu-href">Автоматические кофемашины</a></li>
-                                    <li class="header-modal-menu-li font-18"><a href="../katalog/aksessuary-i-komplektuyushchie/index.html" class="header-modal-menu-href">Аксессуары и комплектующие</a></li>
-                                    <li class="header-modal-menu-li font-18"><a href="../katalog/kofe/index.html" class="header-modal-menu-href">Кофе</a></li>
-                                </ul>
-                                <ul class="header-modal-menu-ul">
-                                    <li class="header-modal-menu-li font-18"><a href="index.html" class="header-modal-menu-href">О бренде</a></li>
-                                    <li class="header-modal-menu-li font-18"><a href="../service/index.html" class="header-modal-menu-href">Сервис</a></li>
-                                    <li class="header-modal-menu-li font-18"><a href="../kontaktyi/index.html" class="header-modal-menu-href">Контакты</a></li>
-                                </ul>
-                                <ul class="header-modal-menu-ul">
-                                    <!--<li class="header-modal-menu-li font-18"><a href="" class="header-modal-menu-href">Статьи</a></li>-->
-                                    <li class="header-modal-menu-li font-18"><a href="../politika-konfidencialnosti/index.html" class="header-modal-menu-href">Политика конфиденциальности</a></li>
-                                    <li class="header-modal-menu-li font-18"><a href="../polzovatelskoe-soglashenie/index.html" class="header-modal-menu-href">Пользовательское соглашение</a></li>
-                                    <li class="header-modal-menu-li font-18"><a href="../publichnaya-oferta/index.html" class="header-modal-menu-href">Публичная оферта</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="header-modal-contact-out">
-                            <div class="header-modal-contact-item">
-                                <div class="header-modal-contact-row">
-                                    <div class="header-modal-contact-telephon">
-                                        <p class="header-modal-contact-telephon-p font-18"><a href="tel:84998428888" class="header-modal-menu-href">8 499 842 88 88</a></p>
-                                    </div>
-                                </div>
-                                <div class="header-modal-contact-row">
-                                    <div class="header-modal-contact-description">
-                                        <p class="header-modal-contact-description-p font-18">
-                                            Время работы
-                                            <br/> с 09:00 до 18:00
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="header-modal-contact-row">
-                                    <div class="header-modal-contact-action">
-                                        <div class="header-modal-contact-action-icon">
-                                            <svg id="telegram" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20" width="20" height="20">
-                                                        <path d="M10 20c5.523 0 10-4.477 10-10S15.523 0 10 0 0 4.477 0 10s4.477 10 10 10z" fill="#64A5F0"></path>
-                                                        <path d="M3.724 10.49c1.17-.645 2.474-1.182 3.693-1.722a192.13 192.13 0 0 1 6.33-2.564c.415-.138 1.16-.273 1.232.34-.04.87-.206 1.732-.318 2.595-.286 1.897-.617 3.788-.94 5.68-.11.63-.9.957-1.405.553-1.213-.82-2.437-1.63-3.635-2.47-.393-.4-.028-.972.322-1.257 1-.985 2.06-1.822 3.008-2.858.255-.618-.5-.098-.75.062-1.368.943-2.703 1.944-4.146 2.773-.737.405-1.596.06-2.333-.168-.66-.273-1.628-.55-1.06-.966z" fill="#fff"></path>
-                                                    </svg>
-                                        </div>
-                                        <div class="header-modal-contact-action-icon">
-                                            <svg id="whatsapp" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 21" width="20" height="21">
-                                                        <path d="M17.086 2.907A9.918 9.918 0 0 0 10.042 0C4.552 0 .086 4.446.084 9.91a9.86 9.86 0 0 0 1.33 4.956L0 20l5.28-1.377a9.987 9.987 0 0 0 4.758 1.207h.004c5.488 0 9.956-4.447 9.958-9.91a9.83 9.83 0 0 0-2.914-7.013zm-7.044 15.25h-.003a8.295 8.295 0 0 1-4.214-1.15l-.302-.178-3.133.817.837-3.04-.197-.312A8.19 8.19 0 0 1 1.765 9.91c.002-4.54 3.714-8.236 8.28-8.236 2.21 0 4.29.86 5.852 2.416a8.17 8.17 0 0 1 2.422 5.828c-.003 4.542-3.716 8.238-8.278 8.238z" fill="#E0E0E0"></path>
-                                                        <path d="M.457 19.43l1.348-4.9A9.408 9.408 0 0 1 .537 9.802C.54 4.587 4.802.344 10.04.344c2.542 0 4.928.986 6.722 2.774a9.378 9.378 0 0 1 2.78 6.69c-.002 5.216-4.265 9.46-9.502 9.46h-.004a9.533 9.533 0 0 1-4.54-1.152L.455 19.43z" fill="#65CF72"></path>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.58 5.703c-.183-.408-.377-.416-.553-.423-.143-.006-.307-.006-.47-.006-.165 0-.43.062-.657.307-.225.246-.86.838-.86 2.043s.88 2.37 1.004 2.532c.123.164 1.7 2.715 4.2 3.697 2.08.815 2.502.653 2.953.612.45-.04 1.455-.592 1.66-1.164.205-.572.205-1.062.143-1.164-.06-.102-.225-.163-.47-.286-.247-.122-1.456-.715-1.682-.796-.225-.082-.39-.123-.553.122-.164.245-.635.797-.78.96-.142.164-.286.184-.532.062-.246-.123-1.038-.382-1.978-1.216-.73-.65-1.225-1.45-1.368-1.695-.144-.245-.016-.378.108-.5.11-.11.246-.286.37-.43.122-.142.163-.244.245-.407.082-.164.04-.307-.02-.43-.062-.122-.54-1.333-.76-1.817z" fill="#fff"></path>
-                                                        <path d="M17.004 2.875A9.804 9.804 0 0 0 10.04.002C4.616.002.2 4.397.198 9.8c0 1.725.453 3.41 1.314 4.897L.116 19.773l5.218-1.362a9.872 9.872 0 0 0 4.704 1.194h.004c5.426 0 9.843-4.396 9.845-9.797a9.716 9.716 0 0 0-2.88-6.932zM10.04 17.95h-.002a8.2 8.2 0 0 1-4.164-1.136l-.3-.177-3.096.81.827-3.006-.195-.307A8.095 8.095 0 0 1 1.86 9.8c0-4.49 3.67-8.143 8.184-8.143 2.186 0 4.24.85 5.785 2.388a8.076 8.076 0 0 1 2.393 5.76c-.002 4.49-3.672 8.144-8.182 8.144z" fill="#fff"></path>
-                                                    </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="header-modal-close" id="btn-close">
-                            <svg class="img-fluid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50">
-                                        <path fill="#fff" d="M27.8286 25L45.4144 7.41421L42.5859 4.58578L25.0002 22.1716L7.41436 4.58578L4.58594 7.41421L22.1717 25L4.58594 42.5858L7.41436 45.4142L25.0002 27.8284L42.5859 45.4142L45.4144 42.5858L27.8286 25Z"/>
-                                    </svg>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </header>
-    <!-- header end -->
-    <main>
-        <!-- category-links start -->
-        <section class="category-links-out">
-                 <div class="container container-1440 mt-4 ">
-<ul class="breadcrumb category-links-item"><li class="breadcrumb-item font-16"><a href="../index.html">Главная</a></li><li class="breadcrumb-item active font-16"><span>О бренде</span></li></ul>
-</div>
-        </section>
-        <!-- category-links end -->
+<?
+define("HIDE_SIDEBAR", true);
+require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetTitle("О бренде");
+?>
+<main>
     <section class="basket-out">
-            <div class="container container-1440">
-              <!-- about-brand start -->
-<div class="container container-1440">
-<div class="about-brand-item">
-<div class="block-name-out" style="padding: 0 0 25px;">
-<div class="block-name-item">
-<div class="block-name-title">
-<h2 class="block-name-title-h2 font-40">О производителе и бренде кофейной техники</h2>
-<img class="block-name-title-img" src="../assets/img/header-logo-black.svg" alt="" /></div>
-</div>
-</div>
-<div class="about-brand-content-out">
-<div class="about-brand-content-item">
-<div class="about-brand-column-out">
-<div class="about-brand-column-item">
-<div class="about-brand-column-block-out">
-<div class="about-brand-column-block-item">
-<p class="about-brand-column-block-p font-18">Добро пожаловать в мир Альватто – нового бренда кофейной техники, созданного для того, чтобы каждая российская семья могла наслаждаться великолепным вкусом свежесваренного кофе прямо у себя дома.</p>
-<p class="about-brand-column-block-p font-18">Молодая российская команда Альватто стремится изменить культуру потребления кофе в нашей стране.</p>
-<p class="about-brand-column-block-p font-18">Мы верим, что доступный, но хороший кофе должен быть в каждом доме.</p>
-<p> </p>
-<p class="about-brand-column-block-p font-18"><img src="../assets/img/1614371618_70-p-kofe-na-svetlom%20(1).jpg" alt="" width="99%" /></p>
-<p> </p>
-<p class="about-brand-column-block-p font-18">Техника Альватто надёжная и простая в использовании и обслуживании.</p>
-<p class="about-brand-column-block-p font-18">Мы заботимся о том, чтобы каждый наш клиент мог легко и быстро приготовить свой любимый кофе, не тратя лишнее время на сложные настройки и обслуживание.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="about-brand-column-out">
-<div class="about-brand-column-item">
-<div class="about-brand-column-block-out">
-<div class="about-brand-column-block-item font-18">Кроме того, мы понимаем, как важно не только приобрести хорошую кофемашину, но и получать качественный сервис.</div>
-<div class="about-brand-column-block-item font-18">
-<p> </p>
-</div>
-<div class="about-brand-column-block-item font-18">Компания Альватто всегда на стороне своих клиентов, поэтому мы обменяем вашу кофемашину на новую в случае поломки.</div>
-<div class="about-brand-column-block-item font-18">Тем самым мы избавим вас от проблем связанных с ремонтом и сэкономим ваше время!</div>
-<p> </p>
-<div class="about-brand-column-block-item"><img src="../assets/img/38873386-coffee-foam-texture.jpg" alt="" width="99%" /></div>
-<p> </p>
-<div class="about-brand-column-block-item font-18">Присоединяйтесь к нам и откройте для себя новый уровень культуры потребления кофе вместе с Альватто!</div>
-</div>
-</div>
-</div>
-</div>
-<div class="about-brand-column-out" style="display: none;">
-<div class="about-brand-column-item">
-<div class="about-brand-column-picture"><!--<img src="/assets/img/header-logo-black.svg" alt="О бренде--7" class="about-brand-column-picture-img img-fluid">--></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- about-brand end -->
-        </div>
-        
-        
-    </section>
-    
-    
-    
-    </main>
-    <!-- footer start -->
-    <footer class="footer-out">
-    <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();
-   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-   ym(95636209, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true,
-        webvisor:true
-   });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/95636209" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
         <div class="container container-1440">
-            <div class="footer-item">
-                <div class="footer-logo-out">
-                    <div class="footer-logo-item">
-                        <div class="footer-logo-picture">
-                            <a href="../index.html"><img src="../assets/img/header-logo-white.svg" alt="" class="header-logo-image img-fluid"></a>
-                        </div>
-                        <div class="footer-logo-description">
-                            <p class="footer-logo-description-text  font-16"> Alvatto © 2023 </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-menu-out">
-                    <div class="footer-menu-item">
-                        <div class="footer-menu-item-column">
-                            <ul class="footer-menu-item-ul">
-                                <li class="footer-menu-item-li font-16">
-                                    <a href="../katalog/kofemashinyi/index.html" class="footer-menu-item-href">Кофемашины</a>
-                                </li>
-                                <li class="footer-menu-item-li font-16">
-                                    <a href="../katalog/aksessuary-i-komplektuyushchie/index.html" class="footer-menu-item-href">Аксессуары и комплектующие</a>
-                                </li>
-                                <li class="footer-menu-item-li font-16">
-                                    <a href="../katalog/kofe/index.html" class="footer-menu-item-href">Кофе</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer-menu-item-column">
-                            <ul class="footer-menu-item-ul">
-                                <li class="footer-menu-item-li font-16">
-                                    <a href="index.html" class="footer-menu-item-href">О бренде</a>
-                                </li>
-                                <li class="footer-menu-item-li font-16">
-                                    <a href="../service/index.html" class="footer-menu-item-href">Сервис</a>
-                                </li>
-                                <li class="footer-menu-item-li font-16">
-                                    <a href="../kontaktyi/index.html" class="footer-menu-item-href">Контакты</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer-menu-item-column">
-                            <ul class="footer-menu-item-ul">
-                                <!--<li class="footer-menu-item-li font-16">-->
-                                <!--    <a href="" class="footer-menu-item-href">Статьи</a>-->
-                                <!--</li>-->
-                                <li class="footer-menu-item-li font-16">
-                                    <a href="../politika-konfidencialnosti/index.html" class="footer-menu-item-href">Политика конфиденциальности</a>
-                                </li>
-                                <li class="footer-menu-item-li font-16">
-                                    <a href="../polzovatelskoe-soglashenie/index.html" class="footer-menu-item-href">Пользовательское соглашение</a>
-                                </li>
-                                <li class="footer-menu-item-li font-16">
-                                    <a href="../publichnaya-oferta/index.html" class="footer-menu-item-href">Публичная оферта</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-contact-out">
-                    <div class="footer-contact-item">
-                        <div class="footer-contact-phone-out">
-                            <div class="footer-contact-phone-item">
-                                <a href="" class="footer-contact-phone-item-a">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26">
-                                        <path d="M16 1H8C6.34 1 5 2.34 5 4v16c0 1.66 1.34 3 3 3h8c1.66 0 3-1.34 3-3V4c0-1.66-1.34-3-3-3zm1 17H7V4h10v14zm-3 3h-4v-1h4v1z"/>
-                                    </svg>
-                                    <span class="footer-contact-phone-item-span font-16">
-                                        8 499 842 88 88 
-                                    </span>
-                                </a>
+            <!-- about-brand start -->
+            <div class="container container-1440">
+                <div class="about-brand-item">
+                    <div class="block-name-out" style="padding: 0 0 25px;">
+                        <div class="block-name-item">
+                            <div class="block-name-title">
+                                <h2 class="block-name-title-h2 font-40">О производителе и бренде кофейной техники</h2>
+                                <img class="block-name-title-img" src="../assets/img/header-logo-black.svg" alt=""/>
                             </div>
                         </div>
-                        <div class="footer-contact-icon-out">
-                            <div class="footer-contact-icon-item">
-                                <a href="" class="footer-contact-icon-item-a">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16" width="20" height="20">
-                                        <path d="M13.608 2.325A7.88 7.88 0 0 0 7.998 0C3.625 0 .067 3.556.065 7.928c0 1.397.365 2.76 1.06 3.964L0 16l4.204-1.102a7.928 7.928 0 0 0 3.79.965h.004c4.37 0 7.93-3.557 7.93-7.93a7.88 7.88 0 0 0-2.32-5.608zm-5.61 12.2h-.003a6.583 6.583 0 0 1-3.355-.92l-.24-.143-2.496.654.666-2.43-.157-.25a6.573 6.573 0 0 1-1.007-3.508A6.6 6.6 0 0 1 8 1.338a6.55 6.55 0 0 1 4.66 1.934 6.55 6.55 0 0 1 1.93 4.662 6.6 6.6 0 0 1-6.592 6.59zm2.26-5.58c-.18-.068-.313-.1-.445.098s-.512.644-.627.777c-.116.132-.23.148-.43.05-.198-.1-.836-.31-1.593-.984-.59-.525-.987-1.174-1.102-1.373-.115-.198-.012-.305.087-.404.09-.09.2-.232.298-.348.1-.116.132-.198.198-.33.066-.133.033-.248-.017-.348-.05-.1-.446-1.074-.61-1.47-.162-.387-.325-.334-.447-.34a7.945 7.945 0 0 0-.38-.007.728.728 0 0 0-.53.247c-.18.2-.692.678-.692 1.653s.71 1.917.81 2.05c.098.132 1.396 2.133 3.384 2.99.473.205.842.327 1.13.418.474.15.906.13 1.248.08.38-.058 1.172-.48 1.338-.943.165-.463.165-.86.115-.942-.05-.083-.182-.133-.38-.232-.198-.1-1.172-.578-1.354-.644z"/>
-                                    </svg>
-                                </a>
-                                <a href="" class="footer-contact-icon-item-a">
-                                    <svg id ="telegram" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20" width="20" height="20">
-                                        <path d="M3.724 10.49c1.17-.645 2.474-1.182 3.693-1.722a192.13 192.13 0 0 1 6.33-2.564c.415-.138 1.16-.273 1.232.34-.04.87-.206 1.732-.318 2.595-.286 1.897-.617 3.788-.94 5.68-.11.63-.9.957-1.405.553-1.213-.82-2.437-1.63-3.635-2.47-.393-.4-.028-.972.322-1.257 1-.985 2.06-1.822 3.008-2.858.255-.618-.5-.098-.75.062-1.368.943-2.703 1.944-4.146 2.773-.737.405-1.596.06-2.333-.168-.66-.273-1.628-.55-1.06-.966z" fill="#fff"></path>
-                                    </svg>
-                                </a>
+                    </div>
+                    <div class="about-brand-content-out">
+                        <div class="about-brand-content-item">
+                            <div class="about-brand-column-out">
+                                <div class="about-brand-column-item">
+                                    <div class="about-brand-column-block-out">
+                                        <div class="about-brand-column-block-item">
+                                            <p class="about-brand-column-block-p font-18">Добро пожаловать в мир
+                                                Альватто – нового бренда кофейной техники, созданного для того, чтобы
+                                                каждая российская семья могла наслаждаться великолепным вкусом
+                                                свежесваренного кофе прямо у себя дома.</p>
+                                            <p class="about-brand-column-block-p font-18">Молодая российская команда
+                                                Альватто стремится изменить культуру потребления кофе в нашей
+                                                стране.</p>
+                                            <p class="about-brand-column-block-p font-18">Мы верим, что доступный, но
+                                                хороший кофе должен быть в каждом доме.</p>
+                                            <p> </p>
+                                            <p class="about-brand-column-block-p font-18"><img
+                                                    src="../assets/img/1614371618_70-p-kofe-na-svetlom%20(1).jpg" alt=""
+                                                    width="99%"/></p>
+                                            <p> </p>
+                                            <p class="about-brand-column-block-p font-18">Техника Альватто надёжная и
+                                                простая в использовании и обслуживании.</p>
+                                            <p class="about-brand-column-block-p font-18">Мы заботимся о том, чтобы
+                                                каждый наш клиент мог легко и быстро приготовить свой любимый кофе, не
+                                                тратя лишнее время на сложные настройки и обслуживание.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about-brand-column-out">
+                                <div class="about-brand-column-item">
+                                    <div class="about-brand-column-block-out">
+                                        <div class="about-brand-column-block-item font-18">Кроме того, мы понимаем, как
+                                            важно не только приобрести хорошую кофемашину, но и получать качественный
+                                            сервис.
+                                        </div>
+                                        <div class="about-brand-column-block-item font-18">
+                                            <p> </p>
+                                        </div>
+                                        <div class="about-brand-column-block-item font-18">Компания Альватто всегда на
+                                            стороне своих клиентов, поэтому мы обменяем вашу кофемашину на новую в
+                                            случае поломки.
+                                        </div>
+                                        <div class="about-brand-column-block-item font-18">Тем самым мы избавим вас от
+                                            проблем связанных с ремонтом и сэкономим ваше время!
+                                        </div>
+                                        <p> </p>
+                                        <div class="about-brand-column-block-item"><img
+                                                src="../assets/img/38873386-coffee-foam-texture.jpg" alt=""
+                                                width="99%"/></div>
+                                        <p> </p>
+                                        <div class="about-brand-column-block-item font-18">Присоединяйтесь к нам и
+                                            откройте для себя новый уровень культуры потребления кофе вместе с Альватто!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-brand-column-out" style="display: none;">
+                            <div class="about-brand-column-item">
+                                <div class="about-brand-column-picture">
+                                    <!--<img src="/assets/img/header-logo-black.svg" alt="О бренде--7" class="about-brand-column-picture-img img-fluid">--></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- about-brand end -->
         </div>
-    </footer>
-    <!-- footer end -->
-     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous">
-    </script>
-    <!-- <script src="/assets/js/daterangepicker.js"></script> -->
-    <!-- <script src="https://malsup.github.com/jquery.form.js"></script> -->
-    <script src="../assets/js/jquery.maskedinput.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-    <script src="../assets/js/script.js" defer></script>
-<script src="../assets/components/sweetalert2/js/sweetalert2.all.min.js"></script>
-<script src="../assets/components/sweetalert2/js/default.min.js"></script>
-<script>document.addEventListener('DOMContentLoaded', function(){ SweetAlert2.initialize({"position":"top-end","timer":3000,"showConfirmButton":false,"toast":true,"width":"19rem"},{"ajaxform":true,"minishop2":true,"office":true,"msoneclick":true}) })</script>
-<script src="../assets/components/minishop2/js/web/default%EF%B9%96v=667ec14321.js"></script>
-<script src="../assets/components/minishop2/js/web/lib/jquery.jgrowl.min.js"></script>
-<script src="../assets/components/minishop2/js/web/message_settings.js"></script>
-<script src="../assets/components/ajaxform/js/default.js"></script>
-<script type="text/javascript">AjaxForm.initialize({"assetsUrl":"\/assets\/components\/ajaxform\/","actionUrl":"\/assets\/components\/ajaxform\/action.php","closeMessage":"\u0437\u0430\u043a\u0440\u044b\u0442\u044c \u0432\u0441\u0435","formSelector":"form.ajax_form","pageId":7});</script>
-</body>
 
-</html>
+    </section>
+</main>
+
+<?
+require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");
+?>

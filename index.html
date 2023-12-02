@@ -414,7 +414,7 @@
         <!-- title-block start -->
         <section class="title-block-out">
             <div class="title-block-bg-video">
-                <img class="title-block-bg-video-imd" src="assets/images/38873386-coffee-foam-texture.jpg" alt="slider-1">
+<!--                <img class="title-block-bg-video-imd" src="assets/images/38873386-coffee-foam-texture.jpg" alt="slider-1">-->
                <!--  <video class="background-video" autoplay loop muted poster="/assets/img/bg-video.mp4">
                    <source src="/assets/img/bg-video.mp4" type="video/mp4">
                </video> -->
@@ -1320,16 +1320,10 @@
     //const headerTop = document.querySelector('.header');
     //const pdTop = document.querySelector('#pdtop');
     const boxVideoTitle = document.querySelector('.title-block-bg-video');
-     window.addEventListener('scroll', function() {
-   	        //console.log(window.pageYOffset)
-               const sliderTopMargin = window.pageYOffset ;
-               
-               boxVideoTitle.style.marginTop = sliderTopMargin +"px";
-               
-	        //if(window.pageYOffset < 5) {
-             //  headerTop.classList.remove('fixed');
-  	           //}
-	});
+    window.onscroll = function() {
+        var posTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+        boxVideoTitle.style.backgroundPosition =  'center +' + posTop/5 + 'px';
+    }
     </script>
 <script src="assets/components/sweetalert2/js/sweetalert2.all.min.js"></script>
 <script src="assets/components/sweetalert2/js/default.min.js"></script>

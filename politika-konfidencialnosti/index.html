@@ -1,822 +1,149 @@
-<!DOCTYPE html>
-<html lang="ru">
-
-<head>
-    <!--<base href="https://alvatto.ru/">-->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
-    <link rel="icon" href="../assets/images/favicon.ico" type="image/vnd.microsoft.icon">
-    <!-- <link rel="stylesheet" href="/assets/css/daterangepicker.css"> -->
-    <link rel="stylesheet" href="../assets/css/base.css">
-    <title>Политика конфиденциальности</title>
-<link rel="stylesheet" href="../assets/components/minishop2/css/web/default%EF%B9%96v=667ec14321.css" type="text/css" />
-<link rel="stylesheet" href="../assets/components/minishop2/css/web/lib/jquery.jgrowl.min.css" type="text/css" />
-<script>miniShop2Config = {"close_all_message":"\u0437\u0430\u043a\u0440\u044b\u0442\u044c \u0432\u0441\u0435","cssUrl":"\/assets\/components\/minishop2\/css\/web\/","jsUrl":"\/assets\/components\/minishop2\/js\/web\/","actionUrl":"\/assets\/components\/minishop2\/action.php","ctx":"web","price_format":[2,"."," "],"price_format_no_zeros":true,"weight_format":[3,"."," "],"weight_format_no_zeros":true};</script>
-<link rel="stylesheet" href="../assets/components/ajaxform/css/default.css" type="text/css" />
-</head>
-
-<body>
-    
-    <!-- Modal menu-->
-<div class="modal fade" id="exampleModalMenu" tabindex="-1" aria-labelledby="exampleModalLabelMenu" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title fs-3" id="exampleModalLabel">Меню </h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-          <div class="header-modal-menu-item">
-                                    <ul class="header-modal-menu-ul">
-                                    <li class="header-modal-menu-li font-18"><a href="../katalog/kofemashinyi/index.html" class="header-modal-menu-href">Кофемашины</a></li>
-                                    <li class="header-modal-menu-li font-18"><a href="../katalog/aksessuary-i-komplektuyushchie/index.html" class="header-modal-menu-href">Аксессуары и комплектующие</a></li>
-                                    <li class="header-modal-menu-li font-18"><a href="../katalog/kofe/index.html" class="header-modal-menu-href">Кофе</a></li>
-                                </ul>
-                                <ul class="header-modal-menu-ul">
-                                    <li class="header-modal-menu-li font-18"><a href="../o-brende/index.html" class="header-modal-menu-href">О бренде</a></li>
-                                    <li class="header-modal-menu-li font-18"><a href="../service/index.html" class="header-modal-menu-href">Сервис</a></li>
-                                    <li class="header-modal-menu-li font-18"><a href="../kontaktyi/index.html" class="header-modal-menu-href">Контакты</a></li>
-                                    <li class="header-modal-menu-li font-18"><a href="../poleznaya-informacziya/index.html" class="header-modal-menu-href">Полезная информация</a></a></li>
-                                </ul>
-                                <!--<ul class="header-modal-menu-ul11">
-                                    <!--<li class="header-modal-menu-li font-18"><a href="" class="header-modal-menu-href">Статьи</a></li>-->
-                                <!--<li class="header-modal-menu-li font-18"><a href="politika-konfidencialnosti/" class="header-modal-menu-href">Политика конфиденциальности</a></li>-->
-                                <!--<li class="header-modal-menu-li font-18"><a href="polzovatelskoe-soglashenie/" class="header-modal-menu-href">Пользовательское соглашение</a></li>-->
-                                <!--<li class="header-modal-menu-li font-18"><a href="publichnaya-oferta/" class="header-modal-menu-href">Публичная оферта</a></li>-->
-                                <!--</ul>-->
-                              <!--   <div class="header-modal-menu-ul">
-                                      <p class="header-modal-contact-telephon-p font-18"><a href="tel:88009999999" class="header-modal-menu-href">8 800 999 99 99</a></p>
-                              </div> -->
-                                 <div class="header-modal-menu-ul11">
-                                     <p class="header-modal-contact-description-p font-18">
-                                            Время работы: с 09:00 до 18:00
-                                        </p> 
-                                 </div>
-                                 <div class="header-modal-menu-ul">
-                                      <div class="header-modal-contact-action">
-                                          <div class="header-modal-contact-action-icon">
-                                             <p class="header-modal-contact-telephon-p font-18"><a href="tel:+74998428888" class="header-modal-menu-href">+7 499 842 88 88</a></p>
-                                          </div>
-                                        <div class="header-modal-contact-action-icon">
-                                            <svg id="telegram" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20" width="20" height="20">
-                                                        <path d="M10 20c5.523 0 10-4.477 10-10S15.523 0 10 0 0 4.477 0 10s4.477 10 10 10z" fill="#64A5F0"></path>
-                                                        <path d="M3.724 10.49c1.17-.645 2.474-1.182 3.693-1.722a192.13 192.13 0 0 1 6.33-2.564c.415-.138 1.16-.273 1.232.34-.04.87-.206 1.732-.318 2.595-.286 1.897-.617 3.788-.94 5.68-.11.63-.9.957-1.405.553-1.213-.82-2.437-1.63-3.635-2.47-.393-.4-.028-.972.322-1.257 1-.985 2.06-1.822 3.008-2.858.255-.618-.5-.098-.75.062-1.368.943-2.703 1.944-4.146 2.773-.737.405-1.596.06-2.333-.168-.66-.273-1.628-.55-1.06-.966z" fill="#fff"></path>
-                                                    </svg>
-                                        </div>
-                                        <div class="header-modal-contact-action-icon">
-                                            <svg id="whatsapp" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 21" width="20" height="21">
-                                                        <path d="M17.086 2.907A9.918 9.918 0 0 0 10.042 0C4.552 0 .086 4.446.084 9.91a9.86 9.86 0 0 0 1.33 4.956L0 20l5.28-1.377a9.987 9.987 0 0 0 4.758 1.207h.004c5.488 0 9.956-4.447 9.958-9.91a9.83 9.83 0 0 0-2.914-7.013zm-7.044 15.25h-.003a8.295 8.295 0 0 1-4.214-1.15l-.302-.178-3.133.817.837-3.04-.197-.312A8.19 8.19 0 0 1 1.765 9.91c.002-4.54 3.714-8.236 8.28-8.236 2.21 0 4.29.86 5.852 2.416a8.17 8.17 0 0 1 2.422 5.828c-.003 4.542-3.716 8.238-8.278 8.238z" fill="#E0E0E0"></path>
-                                                        <path d="M.457 19.43l1.348-4.9A9.408 9.408 0 0 1 .537 9.802C.54 4.587 4.802.344 10.04.344c2.542 0 4.928.986 6.722 2.774a9.378 9.378 0 0 1 2.78 6.69c-.002 5.216-4.265 9.46-9.502 9.46h-.004a9.533 9.533 0 0 1-4.54-1.152L.455 19.43z" fill="#65CF72"></path>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.58 5.703c-.183-.408-.377-.416-.553-.423-.143-.006-.307-.006-.47-.006-.165 0-.43.062-.657.307-.225.246-.86.838-.86 2.043s.88 2.37 1.004 2.532c.123.164 1.7 2.715 4.2 3.697 2.08.815 2.502.653 2.953.612.45-.04 1.455-.592 1.66-1.164.205-.572.205-1.062.143-1.164-.06-.102-.225-.163-.47-.286-.247-.122-1.456-.715-1.682-.796-.225-.082-.39-.123-.553.122-.164.245-.635.797-.78.96-.142.164-.286.184-.532.062-.246-.123-1.038-.382-1.978-1.216-.73-.65-1.225-1.45-1.368-1.695-.144-.245-.016-.378.108-.5.11-.11.246-.286.37-.43.122-.142.163-.244.245-.407.082-.164.04-.307-.02-.43-.062-.122-.54-1.333-.76-1.817z" fill="#fff"></path>
-                                                        <path d="M17.004 2.875A9.804 9.804 0 0 0 10.04.002C4.616.002.2 4.397.198 9.8c0 1.725.453 3.41 1.314 4.897L.116 19.773l5.218-1.362a9.872 9.872 0 0 0 4.704 1.194h.004c5.426 0 9.843-4.396 9.845-9.797a9.716 9.716 0 0 0-2.88-6.932zM10.04 17.95h-.002a8.2 8.2 0 0 1-4.164-1.136l-.3-.177-3.096.81.827-3.006-.195-.307A8.095 8.095 0 0 1 1.86 9.8c0-4.49 3.67-8.143 8.184-8.143 2.186 0 4.24.85 5.785 2.388a8.076 8.076 0 0 1 2.393 5.76c-.002 4.49-3.672 8.144-8.182 8.144z" fill="#fff"></path>
-                                                    </svg>
-                                        </div>
-                                    </div> 
-                                 </div>
-             </div>
-      </div>
-    </div>
-  </div>
+<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
 </div>
-
-
-
-<!-- Modal one click-->
-<div class="modal fade" id="exampleModalOneClick" tabindex="-1" aria-labelledby="exampleModalLabelOneClick" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title fs-6" id="exampleModalLabel">Купить в один клик Политика конфиденциальности</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form action="" method="post" class="modal-form-out ajax_form af_example">
-    <input type="hidden" name="modalformoneclick" value="1">
-    <input type="hidden" name="prod_img" value="https://alvatto.ru/">
-    <input type="hidden" name="prod_name" value="Политика конфиденциальности">
-    <input type="hidden" name="prod_price" value="">
-    <input type="hidden" name="url_page" value="https://alvatto.ru/politika-konfidencialnosti/">
-
-
-     <div class="form-group">
-            <input type="image"  name="image" value="" src="" placeholder="" class="form-control"/>
-    </div>
-
-    <div class="form-group">
-        <label class="control-label" for="af_name">Имя *</label>
-        <div class="controls">
-            <input type="text" id="af_name" name="name" value="" placeholder="ваше имя" class="form-control" required/>
-            <span class="error_name"></span>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="control-label" for="af_phone-consult">Телефон: *</label>
-        <div class="controls">
-            <input type="text" id="af_phone-consult" name="phone" value="" placeholder="ваш телефон" class="form-control form-phone" required/>
-            <span class="error_phone"></span>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="control-label" for="af_message">Сообщение</label>
-        <div class="controls">
-            <textarea id="af_message" name="message" class="form-control" rows="3" placeholder="Хочу купить Политика конфиденциальности...."></textarea>
-            <span class="error_message"></span>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <div class="controls">
-            <!--<button type="reset" class="btn btn-default">Очистить</button>-->
-             <button type="submit" class="btn btn-primary bg-color-orange" style="border: none;">Отправить</button>
-        </div>
-    </div>
-
-    
-    
-
-	<input type="hidden" name="af_action" value="a51b37f9e0d56e832caabc45260942d9" />
-</form>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-<!-- Modal consult product-->
-<div class="modal fade" id="exampleModalConsult" tabindex="-1" aria-labelledby="exampleModalLabelConsult" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title fs-6" id="exampleModalLabel">Консультация </h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-              <form action="" method="post" class="modal-form-out ajax_form af_example">
-    <input type="hidden" name="modalformoneclick" value="1">
-    <input type="hidden" name="prod_img" value="https://alvatto.ru/">
-    <input type="hidden" name="prod_name" value="Политика конфиденциальности">
-    <input type="hidden" name="prod_price" value="">
-    <input type="hidden" name="url_page" value="https://alvatto.ru/politika-konfidencialnosti/">
-
-
-     <div class="form-group">
-            <input type="image"  name="image" value="" src="" placeholder="" class="form-control"/>
-    </div>
-
-    <div class="form-group">
-        <label class="control-label" for="af_name">Имя *</label>
-        <div class="controls">
-            <input type="text" id="af_name" name="name" value="" placeholder="ваше имя" class="form-control" required/>
-            <span class="error_name"></span>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="control-label" for="af_phone-consult">Телефон: *</label>
-        <div class="controls">
-            <input type="text" id="af_phone-consult" name="phone" value="" placeholder="ваш телефон" class="form-control form-phone" required/>
-            <span class="error_phone"></span>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="control-label" for="af_message">Сообщение</label>
-        <div class="controls">
-            <textarea id="af_message" name="message" class="form-control" rows="3" placeholder="Хочу купить Политика конфиденциальности...."></textarea>
-            <span class="error_message"></span>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <div class="controls">
-            <!--<button type="reset" class="btn btn-default">Очистить</button>-->
-             <button type="submit" class="btn btn-primary bg-color-orange" style="border: none;">Отправить</button>
-        </div>
-    </div>
-
-    
-    
-
-	<input type="hidden" name="af_action" value="96982cfb430d590e7694fbca2832551b" />
-</form>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal Applic-->
-<div class="modal fade" id="exampleModalApplic" tabindex="-1" aria-labelledby="exampleModalLabelApplic" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title fs-6" id="exampleModalLabel">Оставить заявку Политика конфиденциальности</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form action="" method="post" class="modal-form-out ajax_form af_example">
-    <input type="hidden" name="modalformapplic" value="1">
-    <input type="hidden" name="prod_img" value="https://alvatto.ru/">
-    <input type="hidden" name="prod_name" value="Политика конфиденциальности">
-    <input type="hidden" name="prod_price" value="">
-    <input type="hidden" name="url_page" value="https://alvatto.ru/politika-konfidencialnosti/">
-
-
-     <div class="form-group">
-            <input type="image"  name="image" value="" src="" placeholder="" class="form-control"/>
-    </div>
-
-    <div class="form-group">
-        <label class="control-label" for="af_name">Имя *</label>
-        <div class="controls">
-            <input type="text" id="af_name" name="name" value="" placeholder="ваше имя" class="form-control" required/>
-            <span class="error_name"></span>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="control-label" for="af_phone-consult">Телефон: *</label>
-        <div class="controls">
-            <input type="text" id="af_phone-consult" name="phone" value="" placeholder="ваш телефон" class="form-control form-phone" required/>
-            <span class="error_phone"></span>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="control-label" for="af_message">Сообщение</label>
-        <div class="controls">
-            <textarea id="af_message" name="message" class="form-control" rows="3" placeholder="Примите заявку на Политика конфиденциальности...."></textarea>
-            <span class="error_message"></span>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <div class="controls">
-            <!--<button type="reset" class="btn btn-default">Очистить</button>-->
-             <button type="submit" class="btn btn-primary bg-color-orange" style="border: none;">Оставить заявку</button>
-        </div>
-    </div>
-
-    
-    
-
-	<input type="hidden" name="af_action" value="f59ec914373d3ca1a4d47e3361e2463e" />
-</form>
-      </div>
-    </div>
-  </div>
-</div>
-    
-    <!-- header start -->
-    <header class="header-out header-other">
-     <div class="header-fixed">
-        <div class="container container-1440">
-            <div class="header-item">
-               <!--  <div class="header-logo-out"> -->
-                   <!--  <div class="header-logo-item">
-                       <a class="d-block" href="/">
-                       <img src="assets/img/header-logo-white.svg" alt="header-logo-white" class="header-logo-image img-fluid">
-                       </a>
-                   </div> -->
-              <!--   </div> -->
-                <div class="header-burger-menu-out">
-                     <div class="header-logo-item">
-                        <a class="d-block" href="../index.html">
-                        <img src="../assets/img/header-logo-black.svg" alt="header-logo-white" class="header-logo-image img-fluid">
-                        </a>
-                    </div>
-                    <button class="header-burger-menu-item" id="btn-open11" data-bs-toggle="modal" data-bs-target="#exampleModalMenu">
-                       <svg viewBox="0 0 140 80" width="40" height="40">
-                            <rect width="140" height="15" rx="10"></rect>
-                            <rect y="30" width="140" height="15" rx="10"></rect>
-                            <rect y="60" width="140" height="15" rx="10"></rect>
-                        </svg>
-                    </button>
-                </div>
-                <div class="header-list-link-out">
-                    <div class="header-list-link-item">
-                        <ul class="header-list-link-ul"><li class="header-list-link-li font-18"><a class="header-list-link-href" href="../katalog/index.html" >Каталог</a></li><li class="header-list-link-li font-18"><a class="header-list-link-href" href="../o-brende/index.html" >О бренде</a></li><li class="header-list-link-li font-18"><a class="header-list-link-href" href="../service/index.html" >Сервис</a></li><li class="header-list-link-li font-18"><a class="header-list-link-href" href="../kontaktyi/index.html" >Контакты</a></li><li class="header-list-link-li font-18"><a class="header-list-link-href" href="../poleznaya-informacziya/index.html" >Полезная информация</a></li></ul>
-                        
-                       <!--  <ul class="header-list-link-ul">
-                           <li class="header-list-link-li font-18"><a href="" class="header-list-link-href">Каталог</a></li>
-                           <li class="header-list-link-li font-18"><a href="" class="header-list-link-href">О бренде</a></li>
-                           <li class="header-list-link-li font-18"><a href="" class="header-list-link-href">Сервис</a></li>
-                           <li class="header-list-link-li font-18"><a href="" class="header-list-link-href">Контакты</a></li>
-                           <li class="header-list-link-li font-18"><a href="" class="header-list-link-href">Полезная информация</a></li>
-                       </ul> -->
-                    </div>
-                </div>
-                <div class="header-list-icon-out">
-                    <div class="header-list-icon-item">
-                        
-                        <div class="header-list-icon-action-out">
-                            <div class="header-list-icon-action-item">
-                                <a href="../balket/index.html" class="d-block">
- <div class="header-list-icon-action-href msMiniCart" id="basket">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49A.996.996 0 0 0 20.01 4H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
-                                    </svg>
-                                </div>
-                                <div class="quantity-product-in-basket not_empty">
-                                    <span class="quantity-product-in-basket-span ms2_total_count">0</span>
-                                </div>
-</a>
-                            </div>
-                            <div class="header-list-icon-action-item">
-                            </div>
-                            <div class="header-list-icon-action-item">
-                                <div class="header-list-icon-action-href">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/><path d="M7 12h2v5H7zm8-5h2v10h-2zm-4 7h2v3h-2zm0-4h2v2h-2z"/>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                    </div>
-                </div>
-                <div class="header-contact-out">
-                    <div class="header-contact-item">
-                        <a href="tel:88009999999" class="header-contact-href font-18">8 499 842 88 88</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="header-modal-out" id="modal-block">
-            <div class="container container-1440">
-                <div class="header-modal-item">
-                    <div class="header-modal-block">
-                        <div class="header-modal-menu-out">
-                            <div class="header-modal-menu-item">
-                                    <ul class="header-modal-menu-ul">
-                                    <li class="header-modal-menu-li font-18"><a href="../katalog/kofemashinyi/index.html" class="header-modal-menu-href">Автоматические кофемашины</a></li>
-                                    <li class="header-modal-menu-li font-18"><a href="../katalog/aksessuary-i-komplektuyushchie/index.html" class="header-modal-menu-href">Аксессуары и комплектующие</a></li>
-                                    <li class="header-modal-menu-li font-18"><a href="../katalog/kofe/index.html" class="header-modal-menu-href">Кофе</a></li>
-                                </ul>
-                                <ul class="header-modal-menu-ul">
-                                    <li class="header-modal-menu-li font-18"><a href="../o-brende/index.html" class="header-modal-menu-href">О бренде</a></li>
-                                    <li class="header-modal-menu-li font-18"><a href="../service/index.html" class="header-modal-menu-href">Сервис</a></li>
-                                    <li class="header-modal-menu-li font-18"><a href="../kontaktyi/index.html" class="header-modal-menu-href">Контакты</a></li>
-                                </ul>
-                                <ul class="header-modal-menu-ul">
-                                    <!--<li class="header-modal-menu-li font-18"><a href="" class="header-modal-menu-href">Статьи</a></li>-->
-                                    <li class="header-modal-menu-li font-18"><a href="index.html" class="header-modal-menu-href">Политика конфиденциальности</a></li>
-                                    <li class="header-modal-menu-li font-18"><a href="../polzovatelskoe-soglashenie/index.html" class="header-modal-menu-href">Пользовательское соглашение</a></li>
-                                    <li class="header-modal-menu-li font-18"><a href="../publichnaya-oferta/index.html" class="header-modal-menu-href">Публичная оферта</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="header-modal-contact-out">
-                            <div class="header-modal-contact-item">
-                                <div class="header-modal-contact-row">
-                                    <div class="header-modal-contact-telephon">
-                                        <p class="header-modal-contact-telephon-p font-18"><a href="tel:84998428888" class="header-modal-menu-href">8 499 842 88 88</a></p>
-                                    </div>
-                                </div>
-                                <div class="header-modal-contact-row">
-                                    <div class="header-modal-contact-description">
-                                        <p class="header-modal-contact-description-p font-18">
-                                            Время работы
-                                            <br/> с 09:00 до 18:00
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="header-modal-contact-row">
-                                    <div class="header-modal-contact-action">
-                                        <div class="header-modal-contact-action-icon">
-                                            <svg id="telegram" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20" width="20" height="20">
-                                                        <path d="M10 20c5.523 0 10-4.477 10-10S15.523 0 10 0 0 4.477 0 10s4.477 10 10 10z" fill="#64A5F0"></path>
-                                                        <path d="M3.724 10.49c1.17-.645 2.474-1.182 3.693-1.722a192.13 192.13 0 0 1 6.33-2.564c.415-.138 1.16-.273 1.232.34-.04.87-.206 1.732-.318 2.595-.286 1.897-.617 3.788-.94 5.68-.11.63-.9.957-1.405.553-1.213-.82-2.437-1.63-3.635-2.47-.393-.4-.028-.972.322-1.257 1-.985 2.06-1.822 3.008-2.858.255-.618-.5-.098-.75.062-1.368.943-2.703 1.944-4.146 2.773-.737.405-1.596.06-2.333-.168-.66-.273-1.628-.55-1.06-.966z" fill="#fff"></path>
-                                                    </svg>
-                                        </div>
-                                        <div class="header-modal-contact-action-icon">
-                                            <svg id="whatsapp" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 21" width="20" height="21">
-                                                        <path d="M17.086 2.907A9.918 9.918 0 0 0 10.042 0C4.552 0 .086 4.446.084 9.91a9.86 9.86 0 0 0 1.33 4.956L0 20l5.28-1.377a9.987 9.987 0 0 0 4.758 1.207h.004c5.488 0 9.956-4.447 9.958-9.91a9.83 9.83 0 0 0-2.914-7.013zm-7.044 15.25h-.003a8.295 8.295 0 0 1-4.214-1.15l-.302-.178-3.133.817.837-3.04-.197-.312A8.19 8.19 0 0 1 1.765 9.91c.002-4.54 3.714-8.236 8.28-8.236 2.21 0 4.29.86 5.852 2.416a8.17 8.17 0 0 1 2.422 5.828c-.003 4.542-3.716 8.238-8.278 8.238z" fill="#E0E0E0"></path>
-                                                        <path d="M.457 19.43l1.348-4.9A9.408 9.408 0 0 1 .537 9.802C.54 4.587 4.802.344 10.04.344c2.542 0 4.928.986 6.722 2.774a9.378 9.378 0 0 1 2.78 6.69c-.002 5.216-4.265 9.46-9.502 9.46h-.004a9.533 9.533 0 0 1-4.54-1.152L.455 19.43z" fill="#65CF72"></path>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.58 5.703c-.183-.408-.377-.416-.553-.423-.143-.006-.307-.006-.47-.006-.165 0-.43.062-.657.307-.225.246-.86.838-.86 2.043s.88 2.37 1.004 2.532c.123.164 1.7 2.715 4.2 3.697 2.08.815 2.502.653 2.953.612.45-.04 1.455-.592 1.66-1.164.205-.572.205-1.062.143-1.164-.06-.102-.225-.163-.47-.286-.247-.122-1.456-.715-1.682-.796-.225-.082-.39-.123-.553.122-.164.245-.635.797-.78.96-.142.164-.286.184-.532.062-.246-.123-1.038-.382-1.978-1.216-.73-.65-1.225-1.45-1.368-1.695-.144-.245-.016-.378.108-.5.11-.11.246-.286.37-.43.122-.142.163-.244.245-.407.082-.164.04-.307-.02-.43-.062-.122-.54-1.333-.76-1.817z" fill="#fff"></path>
-                                                        <path d="M17.004 2.875A9.804 9.804 0 0 0 10.04.002C4.616.002.2 4.397.198 9.8c0 1.725.453 3.41 1.314 4.897L.116 19.773l5.218-1.362a9.872 9.872 0 0 0 4.704 1.194h.004c5.426 0 9.843-4.396 9.845-9.797a9.716 9.716 0 0 0-2.88-6.932zM10.04 17.95h-.002a8.2 8.2 0 0 1-4.164-1.136l-.3-.177-3.096.81.827-3.006-.195-.307A8.095 8.095 0 0 1 1.86 9.8c0-4.49 3.67-8.143 8.184-8.143 2.186 0 4.24.85 5.785 2.388a8.076 8.076 0 0 1 2.393 5.76c-.002 4.49-3.672 8.144-8.182 8.144z" fill="#fff"></path>
-                                                    </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="header-modal-close" id="btn-close">
-                            <svg class="img-fluid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50">
-                                        <path fill="#fff" d="M27.8286 25L45.4144 7.41421L42.5859 4.58578L25.0002 22.1716L7.41436 4.58578L4.58594 7.41421L22.1717 25L4.58594 42.5858L7.41436 45.4142L25.0002 27.8284L42.5859 45.4142L45.4144 42.5858L27.8286 25Z"/>
-                                    </svg>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </header>
-    <!-- header end -->
-    <main>
-        <!-- category-links start -->
-        <section class="category-links-out">
-                 <div class="container container-1440 mt-4 ">
-<ul class="breadcrumb category-links-item"><li class="breadcrumb-item font-16"><a href="../index.html">Главная</a></li><li class="breadcrumb-item active font-16"><span>Политика конфиденциальности</span></li></ul>
-</div>
-        </section>
-        <!-- category-links end -->
-    <section class="basket-out">
-            <div class="container container-1440">
-              <p> </p>
-<h1>Политика в отношении обработки персональных данных в Интернете</h1>
-<p> </p>
-<h4>Обратите Внимание!</h4>
-<h4>Настоящая Политика регламентирует вопросы обработки персональных данных при использовании интернет-сайта ALVATTO .RU .</h4>
-<h4><span>Пожалуйста, внимательно ознакомьтесь с настоящей Политикой. Вы являетесь пользователем. Используя интернет-сайт <a href="http://www.alvatto.ru"><span>www.alvatto.ru</span></a> , Вы тем самым выражаете согласие с настоящей Политикой. Если Вы не согласны с ней, пожалуйста, не используйте сайт.</span></h4>
-<p><span> </span></p>
-<p><span>1. Общие положения</span></p>
-<p><span>1.1. </span>Настоящая Политика в отношении обработки персональных данных в Интернете подготовлена в соответствии с Конституцией Российской Федерации, Конвенцией о защите физических лиц при автоматизированной обработке персональных данных (заключена в г. Страсбурге 28.01.1981), Федеральным законом от 27.07.2006 № 152-ФЗ «О персональных данных», Федеральным законом от 27.07.2006 № 149-ФЗ «Об информации, информационных технологиях и о защите информации», Законом Российской Федерации от 07.02.1992 № 2300-1 «О защите прав потребителей», Указом Президента Российской Федерации от 06.03.1997 № 188 «Об утверждении Перечня сведений конфиденциального характера», Постановлением Правительства Российской Федерации от 01.11.2012 № 1119 «Об утверждении требований к защите персональных данных при их обработке в информационных системах персональных данных», Приказом ФСТЭК России от 18.02.2013 № 21 «Об утверждении Состава и содержания организационных и технических мер по обеспечению безопасности персональных данных при их обработке в информационных системах персональных данных», иными нормативными правовыми актами и подзаконными нормативными правовыми актами Российской Федерации в области защиты персональных данных и определяет позицию Общества с ограниченной ответственностью «Эдил-Импорт» касательно обработки и защиты персональных данных, соблюдения прав и свобод каждого субъекта персональных данных и, в особенности, права на неприкосновенность частной жизни, личную и семейную тайны.</p>
-<p><span>1.2. </span>ООО «Альватто», учрежденное в качестве юридического лица по законодательству Российской Федерации (ОГРН:1237700720267, ИНН: 773509196482) и зарегистрированное по юридическому адресу: : Россия, Город Москва, Вн. Тер. Г. Муниципальный округ Матушкино, город Зеленоград, к. 457 является оператором персональных данных.</p>
-<p><span>1.3. </span>Политика ООО «Альватто» в отношении обработки персональных данных состоит в том, что персональные данные должны обрабатываться только в случаях и в порядке, установленных применимым законодательством на законной и справедливой основе. Соблюдение и защита прав и законных интересов субъектов персональных данных является главным приоритетом для ООО «Альватто».</p>
-<p><span>1.4. </span>В настоящей Политике в отношении обработки персональных данных в Интернете используются перечисленные ниже термины, которые могут быть указаны с большой или маленькой буквы.</p>
-<p><span> <em>«Автоматизированная обработка персональных данных»</em> – обработка персональных данных с помощью средств вычислительной техники. <br /> <em>«Актуализация персональных данных»</em> – действия по уточнению, обновлению и изменению персональных данных, направленные на обеспечение актуальности персональных данных по отношению к целям их обработки. <br /> <em>«Биометрические персональные данные»</em> – сведения, которые характеризуют физиологические и биологические особенности человека, на основании которых можно установить его личность. <br /> <em>«Блокирование персональных данных»</em> – временное прекращение обработки персональных данных (за исключением случаев, если обработка необходима для уточнения персональных данных). <br /> <em>«Данные»</em> – персональные данные, обрабатываемые с использованием Сайта. <br /> <em>«Закон»</em> – Федеральный закон №152-ФЗ от 27.07.2006 «О персональных данных». <br /> <em>«Запись персональных данных»</em> – процесс внесения информации, содержащей персональные данные, на любые материальные и/или электронные носители информации с целью сохранения и последующего воспроизведения записанной информации. <br /> <em>«Извлечение персональных данных»</em> – совокупность алгоритмов и компьютерных методов обработки информации, используемых для выборки персональных данных из специальных хранилищ или баз данных. <br /> <em>«Информационная система»</em> - совокупность содержащихся в базах данных персональных данных и обеспечивающих их обработку информационных технологий и технических средств. <br /> <em>«Информация»</em> – сведения (сообщения, данные) независимо от формы их представления. <br /> <em>«Использование персональных данных»</em> – действия (операции) с персональными данными, совершаемые работниками Оператора в целях принятия решений или совершения иных действий, порождающих юридические последствия в отношении субъектов персональных данных либо иным образом затрагивающих их права и свободы или права и свободы других лиц. <br /> <em>«Компания»</em> – Общество с ограниченной ответственностью, являющееся оператором Данных. <br /> <em>«Конфиденциальность персональных данных»</em> – обязательное для выполнения лицом, получившим доступ к персональным данным, требование не передавать такую информацию третьим лицам без согласия ее обладателя. <br /> <em>«Накопление персональных данных»</em> – создание, хранение и поддержание в актуальном состоянии массива обрабатываемых персональных данных, необходимого для выполнения функциональных задач Оператора персональных данных. <br /> <em>«Неавтоматизированная обработка персональных данных»</em> – обработка персональных данных без использования средств вычислительной техники. <br /> <em>«Обезличивание персональных данных»</em> – действия, в результате которых становится невозможным без использования дополнительной информации определить принадлежность персональных данных конкретному субъекту персональных данных. <br /> <em>«Обработка персональных данных»</em> – любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных. <br /> <em>«Оператор»</em> – государственный орган, муниципальный орган, юридическое или физическое лицо, самостоятельно или совместно с другими лицами организующие и (или) осуществляющие обработку персональных данных, а также определяющие цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными. <br /> <em>«Ответственный за обработку персональных данных»</em> – работник Компании, назначенный Ответственным за организацию обработки персональных данных в Компании. <br /> <em>«Передача персональных данных»</em> – действия, направленные на сообщение персональных данных третьей стороне в заранее определенных целях. <br /> <em>«Персональные данные»</em> – любая информация, относящаяся к прямо или косвенно определенному или определяемому физическому лицу (субъекту персональных данных). <br /> <em>«Политика»</em> – настоящая Политика в отношении обработки персональных данных. <br /> <em>«Пользователи»</em> – физические лица (субъекты персональных данных), которые посещают Сайт и используют его функциональные возможности. <br /> <em>«Предоставление персональных данных»</em> – действия, направленные на раскрытие персональных данных определенному лицу или определенному кругу лиц. <br /> <em>«Работники»</em> – физические лица (субъекты персональных данных), с которыми Компания состоит в трудовых отношениях. <br /> <em>«Распространение персональных данных»</em> – действия, направленные на раскрытие персональных данных неопределенному кругу лиц. <br /> <em>«Роскомнадзор»</em> – уполномоченный орган по защите прав субъектов персональных данных. <br /> <em>«Сайт»</em> – интернет-сайт, находящийся по адресу <a href="http://www.alvatto.ru"><span>www.alvatto.ru</span></a> . <br /> <em>«Сбор персональных данных»</em> – целенаправленный процесс получения персональных данных от субъекта персональных данных. <br /> <em>«Систематизация персональных данных»</em> – внесение персональных данных в определенную базу данных. <br /> <em>«Смешанная обработка персональных данных»</em> – обработка, которая осуществляется как с использованием, так и без использования средств вычислительной техники. <br /> <em>«Специальные категории персональных данных»</em> – любая информация, касающаяся расовой, национальной принадлежности, политических взглядов, религиозных или философских убеждений, состояния здоровья, интимной жизни, судимости. <br /> <em>«Субъект персональных данных»</em> – физическое лицо, к которому относятся персональные данные. <br /> <em>«Трансграничная передача персональных данных»</em> – передача персональных данных на территорию иностранного государства иностранному оператору. <br /> <em>«Удаление персональных данных»</em> – действия, в результате которых прекращается хранение обрабатываемых персональных данных на материальных носителях по достижению цели их обработки или вследствие направления запроса субъекта персональных данных об удалении его персональных данных. <br /> <em>«Уничтожение персональных данных»</em> – действия, в результате которых становится невозможным восстановить содержание персональных данных в информационной системе и (или) в результате которых уничтожаются материальные носители персональных данных. <br /> <em>«Уточнение персональных данных»</em> – исправление какого-либо дефекта в существующих персональных данных, например, их неполноты или неточности. <br /> <em>«Хранение персональных данных»</em> – процесс, предполагающий нахождение персональных данных в систематизированном виде в распоряжении Компании.</span></p>
-<p><span>1.5. </span>Настоящая Политика регламентирует только вопросы обработки и защиты Данных Пользователей при использовании ими Сайта, а также размещенных на Сайте Данных, принадлежащих Работникам. Обработка и защита персональных данных во всех остальных случаях определяется локальными актами Компании.</p>
-<p><span>1.6. </span>Сайт содержит ссылки на иные веб-ресурсы, принадлежащие Компании или иным лицам. Действие настоящей Политики на них не распространяется. Пользователям, переходящим по ссылкам на другие сайты, рекомендуется ознакомиться с политиками об обработке персональных данных, размещенными на таких сайтах.</p>
-<p><span>1.7. </span>Пользователю принадлежат следующие основные права:</p>
-<p><span>—право на получение информации, касающейся обработки его Данных;</span></p>
-<p><span>— право требовать уточнения Данных, их блокирования или уничтожения в случае, если они являются неполными, устаревшими, неточными, незаконно полученными или не являются необходимыми для заявленной цели обработки;</span></p>
-<p><span>— право на обжалование действий (бездействия) Компании в органах власти, в том числе в судебном порядке;</span></p>
-<p><span>— право на защиту прав и законных интересов, в том числе на возмещение убытков и (или) компенсацию морального вреда в судебном порядке либо согласно иной процедуре, предусмотренной применимым законодательством;</span></p>
-<p><span>— право на обработку персональных данных в целях продвижения товаров, работ, услуг путем осуществления прямых контактов с помощью средств связи только при условии предварительного согласия Пользователя;</span></p>
-<p><span>— иные права, установленные законодательством Российской Федерации.</span></p>
-<p><span>1.8. </span>Компания, как оператор Данных, вправе обрабатывать Данные только для достижения указанных целей обработки и с соблюдением условий, установленных нормативными правовыми актами и подзаконными нормативными правовыми актами Российской Федерации в области защиты персональных данных.</p>
-<p><span>1.9. </span>На Компанию возложены следующие основные обязанности:</p>
-<p><span>— при сборе Данных Компания обязана предоставить Пользователю по его просьбе информацию, предусмотренную ч. 7 ст. 14 Закона, в частности, подтверждение факта обработки персональных данных, правовые основания и цели обработки персональных данных, применяемые оператором способы обработки персональных данных, наименование и место нахождения оператора, сведения о лицах (за исключением работников оператора), которые имеют доступ к персональным данным или которым могут быть раскрыты персональные данные на основании договора с оператором или на основании федерального закона, обрабатываемые персональные данные, относящиеся к соответствующему субъекту персональных данных, и источник их получения, сроки обработки персональных данных (в том числе сроки их хранения), порядок осуществления субъектом персональных данных принадлежащих ему прав, наименование или фамилию, имя, отчество и адрес лица, осуществляющего обработку персональных данных по поручению оператора, если обработка поручена или будет поручена такому лицу, иные сведения, предусмотренные Законом или другими федеральными законами.</span></p>
-<p><span>— если предоставление Данных является обязательным в соответствии с законодательством, Компания обязана разъяснить Пользователю юридические последствия отказа от предоставления его Данных;</span></p>
-<p><span>— Компания обязана принимать меры, необходимые и достаточные для обеспечения выполнения обязанностей, предусмотренных Законом и принятыми в соответствии с ним нормативными правовыми актами;</span></p>
-<p><span>— Компания обязана опубликовать в Интернете настоящую Политику, сведения о реализуемых требованиях к защите персональных данных, а также обеспечить возможность доступа к указанному документу с использованием Интернета;</span></p>
-<p><span>— Компания при обработке персональных данных обязана принимать необходимые правовые, организационные и технические меры или обеспечивать их принятие для защиты Данных от неправомерного или случайного доступа к ним, уничтожения, изменения, блокирования, копирования, предоставления, распространения Данных, а также от иных неправомерных действий в отношении Данных;</span></p>
-<p><span>— Компания обязана отвечать на обращения Пользователей и запросы Роскомнадзора и предоставлять им информацию, касающуюся обработки Данных, в установленном Законом порядке;</span></p>
-<p><span>— Компания обязана устранять нарушения законодательства, допущенные при обработке Данных, уточнять, блокировать и уничтожать Данные (или обеспечивать выполнение этих действий лицом, действующим по поручению Компании);</span></p>
-<p><span>— Компания обязана до начала обработки персональных данных уведомить Роскомнадзор о своем намерении осуществлять обработку персональных данных за исключением случаев, установленных законом;</span></p>
-<p><span>— Компания обязана назначить Ответственного за обработку персональных данных;</span></p>
-<p><span>— Компания несет иные предусмотренные законодательством обязанности в связи с обработкой Данных.</span></p>
-<p> </p>
-<p><span>2. Цели сбора Данных</span></p>
-<p><span>2.1. </span>Обработка Данных должна ограничиваться достижением конкретных, заранее определенных и законных целей. Не допускается обработка Данных, несовместимая с целями сбора персональных данных. Не допускается объединение баз данных, содержащих персональные данные, обработка которых осуществляется в целях, несовместимых между собой.</p>
-<p><span>2.2. </span>Компания обрабатывает Данные с использованием Сайта для достижения следующих целей:</p>
-<p><span>— деловое общение с Пользователями;</span></p>
-<p><span>— заказ, реализация и доставка товаров, приобретение услуг, направление кассовых чеков;</span></p>
-<p><span>— предоставление личного кабинета на Сайте;</span></p>
-<p><span>— распространение рекламы, информационных материалов и новостей;</span></p>
-<p><span>— обеспечение работы форума;</span></p>
-<p><span>— передача кредитному брокеру;</span></p>
-<p><span>— дополнительные цели могут быть указаны в согласии Пользователей на обработку их Данных, размещенном на Сайте в наглядном виде (например, в веб-форме, предназначенной для сбора Данных).</span></p>
-<p> </p>
-<p><span>3. Правовые основания обработки Данных</span></p>
-<p><span>3.1. </span>Правовым основанием обработки персональных данных является совокупность правовых актов, во исполнение которых и в соответствии с которыми оператор осуществляет обработку персональных данных, а также согласие субъекта на обработку персональных данных..</p>
-<p><span>3.2. </span>Правовые основания обработки Данных с использованием Сайта указаны в п.4.3 настоящей Политики.</p>
-<p> </p>
-<p><span>4. Объем и категории обрабатываемых Данных, категории субъектов Данных</span></p>
-<p><span>4.1. </span>Содержание и объем обрабатываемых Данных должны соответствовать заявленным целям обработки. Обрабатываемые Данные не должны быть избыточными по отношению к заявленным целям их обработки.</p>
-<p><span>4.2. </span>На Сайте не обрабатываются специальные категории персональных данных (например, сведения о расовой, национальной принадлежности, политических взглядах, религиозных или философских убеждениях, состоянии здоровья), а также биометрические персональные данные.</p>
-<p> </p>
-<p><span>4.3. </span>Ниже приведены сведения о категориях и объеме обрабатываемых Данных Пользователей применительно к целям, правовым основаниям и срокам обработки.</p>
-<p><span> </span><span style="text-align: center;"> </span></p>
-<table dir="ltr" border="1" cellspacing="0" cellpadding="0"><colgroup><col width="294" /><col width="256" /><col width="211" /><col width="100" /></colgroup>
-<tbody>
-<tr>
-<td style="text-align: center;" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Категории Данных Пользователей&quot;}"><strong>Категории Данных Пользователей</strong></td>
-<td style="text-align: center;" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Цели обработки&quot;}"><strong>Цели обработки</strong></td>
-<td style="text-align: center;" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Правовые основания&quot;}"><strong>Правовые основания</strong></td>
-<td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Сроки обработки&quot;}">
-<div>
-<div style="text-align: center;"><strong>Сроки обработки</strong></div>
-</div>
-</td>
-</tr>
-<tr>
-<td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;фамилия, имя, отчество;\nконтактные данные (телефон, адрес электронной почты);\nвремя звонка;\nномер заказа;\nпотребительские предпочтения.&quot;}"> -фамилия, имя, отчество;<br /> -контактные данные (телефон, адрес электронной почты);<br /> -время звонка;<br /> -номер заказа;<br /> -потребительские предпочтения.</td>
-<td class="justifyleft" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Деловое общение с Пользователями&quot;}">Деловое общение с Пользователями</td>
-<td class="justifyleft" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Законодательство Российской Федерации в области защиты персональных данных, включая Федеральный закон от 27.07.2006 № 152-ФЗ; \nСогласие на обработку персональных данных (пп.1 ч.1 ст.6 Закона)&quot;}">Законодательство Российской Федерации в области защиты персональных данных, включая Федеральный закон от 27.07.2006 № 152-ФЗ; <br />Согласие на обработку персональных данных (пп.1 ч.1 ст.6 Закона)</td>
-<td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;До полного выполнения заказа Пользователя&quot;}">
-<div>
-<div class="justifyleft">До полного выполнения заказа Пользователя</div>
-</div>
-</td>
-</tr>
-<tr>
-<td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;фамилия, имя, отчество;\nконтактные данные (телефон, адрес электронной почты);\nвремя для звонка;\nданные дисконтной и/или бонусных карт;\nадрес доставки;\nпотребительские предпочтения;\nнаименование и реквизиты юридического лица, от имени которого действует Пользователь.&quot;}"> -фамилия, имя, отчество;<br /> -контактные данные (телефон, адрес электронной почты);<br /> -время для звонка;<br /> -данные дисконтной и/или бонусных карт;<br /> -адрес доставки;<br /> -потребительские предпочтения;<br /> -наименование и реквизиты юридического лица, от имени которого действует Пользователь.</td>
-<td class="justifyleft" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Заказ, реализация и доставка товаров, приобретение услуг&quot;}">Заказ, реализация и доставка товаров, приобретение услуг</td>
-<td class="justifyleft" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Законодательство Российской Федерации в области защиты персональных данных, включая Федеральный закон от 27.07.2006 № 152-ФЗ; \nСогласие на обработку персональных данных (пп.1 ч.1 ст.6 Закона)&quot;}">Законодательство Российской Федерации в области защиты персональных данных, включая Федеральный закон от 27.07.2006 № 152-ФЗ; <br />Согласие на обработку персональных данных (пп.1 ч.1 ст.6 Закона)</td>
-<td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;До истечения срока исковой давности (3 года) после полного исполнения Компанией и Пользователем своих обязательств по заказу, реализации и доставки товаров, приобретению услуг&quot;}">
-<div>
-<div class="justifyleft">До истечения срока исковой давности (3 года) после полного исполнения Компанией и Пользователем своих обязательств по заказу, реализации и доставки товаров, приобретению услуг</div>
-</div>
-</td>
-</tr>
-<tr>
-<td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;фамилия, имя, отчество;\nстатус (физическое лицо / представитель юридического лица);\nконтактные данные (адрес электронной почты, телефон);\nпароль.&quot;}"> -фамилия, имя, отчество;<br /> -статус (физическое лицо / представитель юридического лица);<br /> -контактные данные (адрес электронной почты, телефон);<br /> -пароль.</td>
-<td class="justifyleft" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Предоставление личного кабинета на Сайте&quot;}">Предоставление личного кабинета на Сайте</td>
-<td class="justifyleft" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Законодательство Российской Федерации в области защиты персональных данных, включая Федеральный закон от 27.07.2006 № 152-ФЗ; \nСогласие на обработку персональных данных (пп.1 ч.1 ст.6 Закона);\nПользовательское соглашение (пп.5 ч.1 ст.6 Закона)&quot;}">Законодательство Российской Федерации в области защиты персональных данных, включая Федеральный закон от 27.07.2006 № 152-ФЗ; <br />Согласие на обработку персональных данных (пп.1 ч.1 ст.6 Закона);<br />Пользовательское соглашение (пп.5 ч.1 ст.6 Закона)</td>
-<td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;До отзыва согласия Пользователя на обработку персональных данных или прекращения / ограничения для Пользователя доступа к Сайту в соответствии с условиями Пользовательского соглашения&quot;}">
-<div>
-<div class="justifyleft">До отзыва согласия Пользователя на обработку персональных данных или прекращения / ограничения для Пользователя доступа к Сайту в соответствии с условиями Пользовательского соглашения</div>
-</div>
-</td>
-</tr>
-<tr>
-<td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;имя;\nконтактные данные (адрес электронной почты).&quot;}"> -имя;<br /> -контактные данные (адрес электронной почты).</td>
-<td class="justifyleft" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Распространение рекламы, информационных материалов и новостей&quot;}">Распространение рекламы, информационных материалов и новостей</td>
-<td class="justifyleft" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Законодательство Российской Федерации в области защиты персональных данных, включая Федеральный закон от 27.07.2006 № 152-ФЗ; \nСогласие на обработку персональных данных (пп.1 ч.1 ст.6 Закона)&quot;}">Законодательство Российской Федерации в области защиты персональных данных, включая Федеральный закон от 27.07.2006 № 152-ФЗ; <br />Согласие на обработку персональных данных (пп.1 ч.1 ст.6 Закона)</td>
-<td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;До отзыва согласия Пользователя на обработку персональных данных&quot;}">
-<div>
-<div class="justifyleft">До отзыва согласия Пользователя на обработку персональных данных</div>
-</div>
-</td>
-</tr>
-<tr>
-<td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;псевдоним (имя на форуме);\nпароль;\nконтактные данные (адрес электронной почты);\nгород проживания.&quot;}"> -псевдоним (имя на форуме);<br /> -пароль;<br /> -контактные данные (адрес электронной почты);<br /> -город проживания.</td>
-<td class="justifyleft" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Обеспечение работы форума&quot;}">Обеспечение работы форума</td>
-<td class="justifyleft" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Законодательство Российской Федерации в области защиты персональных данных, включая Федеральный закон от 27.07.2006 № 152-ФЗ; \nСогласие на обработку персональных данных (пп.1 ч.1 ст.6 Закона)&quot;}">Законодательство Российской Федерации в области защиты персональных данных, включая Федеральный закон от 27.07.2006 № 152-ФЗ; <br />Согласие на обработку персональных данных (пп.1 ч.1 ст.6 Закона)</td>
-<td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;До отзыва согласия Пользователя на обработку персональных данных&quot;}">
-<div>
-<div class="justifyleft">До отзыва согласия Пользователя на обработку персональных данных</div>
-</div>
-</td>
-</tr>
-<tr>
-<td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;сведения о заказе.&quot;}"> -сведения о заказе.</td>
-<td class="justifyleft" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Передача кредитному брокеру&quot;}">Передача кредитному брокеру</td>
-<td class="justifyleft" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Законодательство Российской Федерации в области защиты персональных данных, включая Федеральный закон от 27.07.2006 № 152-ФЗ; \nСогласие на обработку персональных данных (пп.1 ч.1 ст.6 Закона)&quot;}">Законодательство Российской Федерации в области защиты персональных данных, включая Федеральный закон от 27.07.2006 № 152-ФЗ; <br />Согласие на обработку персональных данных (пп.1 ч.1 ст.6 Закона)</td>
-<td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;До окончания передачи персональных данных кредитному брокеру.&quot;}">
-<div>
-<div class="justifyleft">До окончания передачи персональных данных кредитному брокеру.</div>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-<p><span> </span></p>
-<p><span>Компания может получать Данные Пользователя для обработки от кредитного брокера (как указано в п.5.6 настоящих Правил). С использованием Сайта могут обрабатываться иные категории Данных. В этом случае Пользователь в явной форме предупреждается о сборе Данных (например, путем включения соответствующей графы в веб-форму), дает на это согласие и все условия настоящей Политики подлежат применению без ограничений.</span></p>
-<p><span>4.4. </span>Компания обрабатывает на Сайте следующие Данные Работников в коммерческих целях (в части делового общения с Пользователями): фамилия, имя, отчество; должность; подразделение; контактные данные (ICQ, телефон, адрес электронной почты); рабочее время; иные Данные. Данные Работников обрабатываются в соответствии с требованиями трудового законодательства и других нормативно-правовых актов. Указанные Данные Работников размещаются на Сайте в общем доступе на основании согласия Работников в письменной форме, полученном во исполнение абз.3 ст.88 Трудового кодекса РФ. Указанные Данные Работников обрабатываются на Сайте в течение срока трудовых отношений между работником и Компанией или до изменения должностных обязанностей работника.</p>
-<p> </p>
-<p><span>5. Порядок и условия обработки Данных</span></p>
-<p><span>5.1. </span>Обработка персональных данных допускается в следующих случаях:</p>
-<p><span>— обработка персональных данных осуществляется с согласия субъекта персональных данных на обработку его персональных данных;</span></p>
-<p><span>— обработка персональных данных необходима для достижения целей, предусмотренных международным договором Российской Федерации или законом, для осуществления и выполнения возложенных законодательством Российской Федерации на оператора функций, полномочий и обязанностей;</span></p>
-<p><span>— обработка персональных данных необходима для исполнения договора, стороной которого либо выгодоприобретателем или поручителем по которому является субъект персональных данных, а также для заключения договора по инициативе субъекта персональных данных или договора, по которому субъект персональных данных будет являться выгодоприобретателем или поручителем;</span></p>
-<p><span>— обработка персональных данных необходима для защиты жизни, здоровья или иных жизненно важных интересов субъекта персональных данных, если получение согласия субъекта персональных данных невозможно;</span></p>
-<p><span>— обработка персональных данных необходима для осуществления прав и законных интересов оператора или третьих лиц, либо для достижения общественно значимых целей при условии, что при этом не нарушаются права и свободы субъекта персональных данных;</span></p>
-<p><span>— обработка персональных данных осуществляется в статистических или иных исследовательских целях, за исключением цели продвижения товаров, работ и услуг путем осуществления прямых контактов с потенциальным потребителем с помощью средств связи, при условии обязательного обезличивания персональных данных;</span></p>
-<p><span>— персональные данные сделаны общедоступными субъектом персональных данных;</span></p>
-<p><span>— осуществляется обработка персональных данных, подлежащих опубликованию или обязательному раскрытию в соответствии с федеральным законом.</span></p>
-<p><span>5.2. </span>Компания обрабатывает Данные с использованием средств автоматизации (в том числе ЭВМ) и без использования средств автоматизации (в том числе на бумажных носителях). Компания может совершать следующие действия (операции) и/или совокупность действий (операций) с Данными:</p>
-<p><span>— сбор;</span></p>
-<p><span>— запись;</span></p>
-<p><span>— систематизация</span></p>
-<p><span>— накопление;</span></p>
-<p><span>— хранение;</span></p>
-<p><span>— уточнение (обновление, изменение);</span></p>
-<p><span>— извлечение;</span></p>
-<p><span>— использование;</span></p>
-<p><span>— передача (предоставление, доступ);</span></p>
-<p><span>— обезличивание;</span></p>
-<p><span>— блокирование;</span></p>
-<p><span>— удаление;</span></p>
-<p><span>— уничтожение.</span></p>
-<p><span>5.3. </span>При сборе Данных Пользователей с использованием веб-форм Компания всегда исходит из следующего:</p>
-<p><span>— все Данные принадлежат лично Пользователю, заполнившему веб-форму;</span></p>
-<p><span>— Пользователь следовал инструкциям по заполнению веб-формы, в том числе вносил сведения в специально предназначенные для них разделы;</span></p>
-<p><span>— Пользователь является дееспособным и совершеннолетним;</span></p>
-<p><span>— Пользователь сообщил достоверные и актуальные Данные.</span></p>
-<p><span>5.4. </span>Данные Пользователей обрабатываются до достижения цели их обработки или до отзыва Пользователем согласия на обработку его Данных, если отсутствуют иные установленные законодательством основания для продолжения обработки Данных. Сроки обработки могут быть также указаны в тексте согласия на обработку Данных, приложенного к соответствующей веб-форме.</p>
-<p><span>5.5. </span>Срок и условия обработки Данных Работников определяются законодательством РФ и локальными нормативными актами Компании.</p>
-<p><span>5.6. </span>Компания может поручать обработку Данных третьим лицам путем заключения с ними договора на поручение обработки персональных данных. При соблюдении установленных законом условий Компания также вправе передавать Данные третьим лицам для дальнейшей самостоятельной обработки. Третьи лица обязаны соблюдать требования к защите обрабатываемых Данных.</p>
-<p><span>5.7. </span>Пользователь может выразить желание приобрести товары и/или услуги в кредит или в рассрочку, нажав на соответствующую кнопку при оформлении заказа. В этом случае Пользователь осуществит переход на сайт кредитного брокера для решения вопроса о кредите / рассрочке, а Компания передаст кредитному брокеру сведения о заказе. Компания также может получить от кредитного брокера следующие персональные данные Пользователя:</p>
-<p><span>— фамилия, имя, отчество;</span></p>
-<p><span>— данные по кредиту / рассрочке (общая сумма, сумма месячного платежа, число платежей, первоначальный взнос, банк-кредитор, реквизиты и условия кредитного договора);</span></p>
-<p><span>— сведения о заказе;</span></p>
-<p><span>— статус кредитной заявки.</span></p>
-<p><span>Указанные Данные Пользователей обрабатываются в целях реализации товаров в кредит/рассрочку. Срок обработки: до истечения срока исковой давности (3 года) после полного исполнения Компанией и Пользователем своих обязательств в связи с реализацией соответствующего товара.</span></p>
-<p><span>Передача Данных Пользователей кредитному брокеру и получение Данных Пользователей от него, а также последующая обработка полученных Данных должны осуществляться только на основании <strong>согласия Пользователя </strong>(пп.1 ч.1 ст.6 Закона). Компания никогда не дает кредитному брокеру поручения на обработку Данных Пользователя, не определяет цели, способы и иные условия обработки Данных кредитным брокером и не несет ответственность за его деятельность. Деятельность кредитного брокера никак не зависит от Компании. Пользователь вступает в юридические отношения, в том числе по поводу персональных данных, непосредственно с кредитным брокером.</span></p>
-<p><span>5.8. </span>Компания не осуществляет трансграничную передачу Данных, обрабатываемых с использованием Сайта.</p>
-<p><span>5.9. </span>Компания передает Данные судам, правоохранительным, надзорным органам и иным уполномоченным органам власти и должностным лицам при наличии оснований, предусмотренных применимым законодательством.</p>
-<p><span>5.10. </span>Компания передает Данные транспортным и сервисным организациям, оказывающим услуги по доставке и профессиональной установке/монтажу реализуемого Компанией товара, организациям, предоставляющим сервисные услуги по оформлению заявок на получение кредитов (кредитный сервис), оказывающим услуги в области маркетинговых исследований, а также операторам связи, в том числе (но не ограничиваясь этим): —</p>
-<p><span>5.11. </span>Компания признает Данные строго конфиденциальной информацией. Компания и иные лица, получившие доступ к Данным, не раскрывают третьим лицам и не распространяют Данные без согласия соответствующего субъекта персональных данных, если иное не предусмотрено федеральным законом.</p>
-<p><span>5.12. </span>Во исполнение ч.2 ст.18.1 Закона, Компания публикует настоящую Политику, а также сведения о реализуемых требованиях к защите Данных (Приложение №1 к Политике) на Сайте и обеспечивает постоянный, свободный и бесплатный доступ к ним для всех Пользователей.</p>
-<p><span>5.13. </span>Компания принимает необходимые правовые, организационные и технические меры или обеспечивает их принятие для защиты Данных от неправомерного или случайного доступа к ним, уничтожения, изменения, блокирования, копирования, предоставления, распространения Данных, а также от иных неправомерных действий в отношении Данных. Обеспечение безопасности Данных достигается, в частности:</p>
-<p><span>— определением угроз безопасности Данных при их обработке в информационных системах персональных данных;</span></p>
-<p><span>— применением организационных и технических мер по обеспечению безопасности Данных при их обработке в информационных системах персональных данных, необходимых для выполнения требований к защите Данных, исполнение которых обеспечивает установленные Правительством Российской Федерации уровни защищенности персональных данных;</span></p>
-<p><span>— применением прошедших в установленном порядке процедуру оценки соответствия средств защиты информации;</span></p>
-<p><span>— оценкой эффективности принимаемых мер по обеспечению безопасности Данных до ввода в эксплуатацию информационной системы персональных данных;</span></p>
-<p><span>— учетом машинных носителей Данных;</span></p>
-<p><span>— обнаружением фактов несанкционированного доступа к Данным и принятием мер;</span></p>
-<p><span>— восстановлением Данных, модифицированных или уничтоженных вследствие несанкционированного доступа к ним;</span></p>
-<p><span>— установлением правил доступа к Данным, обрабатываемым в информационной системе персональных данных, а также обеспечением регистрации и учета всех действий, совершаемых с Данными в информационной системе персональных данных;</span></p>
-<p><span>— контролем за принимаемыми мерами по обеспечению безопасности Данных и уровня защищенности информационных систем персональных данных.</span></p>
-<p><span>5.14. </span>Условием прекращения обработки Данных может являться достижение целей обработки Данных, истечение срока действия согласия или отзыв согласия субъекта персональных данных на обработку его Данных, а также выявление неправомерной обработки Данных.</p>
-<p><span>5.15. </span>Хранение Данных осуществляется в форме, позволяющей определить субъекта персональных данных не дольше, чем этого требуют цели обработки Данных, кроме случаев, когда срок хранения Данных не установлен федеральным законом, договором, стороной которого, выгодоприобретателем или поручителем по которому является субъект персональных данных.</p>
-<p><span>5.16. </span>При сборе Данных Компания обязана обеспечить запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение персональных данных граждан Российской Федерации с использованием баз данных, находящихся на территории Российской Федерации, за исключением случаев, установленных Законом.</p>
-<p><span>5.17. </span>Компания обеспечивает условия хранения Данных, исключающие неправомерный или случайный доступ к ним, путем реализации мероприятий физической защиты Данных, а также проведения соответствующих организационных мероприятий.</p>
-<p><span>5.18. </span>Пользователь Сайта может в любое время отозвать свое согласие на обработку Данных, направив электронное или письменное сообщение в свободной форме по адресам, указанным в п.8.14 настоящей Политики.</p>
-<p> </p>
-<p><span>6. Актуализация, исправление, удаление и уничтожение Данных, ответы на запросы субъектов на доступ к Данным</span></p>
-<p><span>6.1. </span>В случае подтверждения факта неточности Данные подлежат их актуализации Компанией.</p>
-<p><span>6.2. </span>В случае выявления факта неправомерности обработки Данных, такая обработка должна быть прекращена.</p>
-<p><span>6.3. </span>При достижении целей обработки Данных, а также в случае отзыва субъектом персональных данных согласия на их обработку Данные подлежат уничтожению, если:</p>
-<p><span>— иное не предусмотрено договором, стороной которого, выгодоприобретателем или поручителем по которому является субъект персональных данных;</span></p>
-<p><span>— Компания не вправе осуществлять обработку без согласия субъекта персональных данных на основаниях, предусмотренных Законом или иными федеральными законами;</span></p>
-<p><span>— иное не предусмотрено иным соглашением между Компанией и субъектом персональных данных.</span></p>
-<p><span>6.4. </span>Компания обязана сообщить субъекту персональных данных или его представителю информацию об осуществляемой им обработке персональных данных такого субъекта по запросу последнего.</p>
-<p> </p>
-<p><span>7. Обработка статистических данных о посещении и использовании Сайта</span></p>
-<p><span>7.1. </span>Компания может использовать сервисы статистики на Сайте, а также файлы cookie и другие аналогичные по назначению технологии. Эти вопросы регламентируются Политикой о статистических данных и файлах cookie .</p>
-<p> </p>
-<p><span>8. Регламент реагирования на запросы/обращения субъектов персональных данных и их представителей, уполномоченных органов по поводу неточности персональных данных, неправомерности их обработки, отзыва согласия и доступа субъекта персональных данных к своим данным</span></p>
-<p><span>8.1. </span>Пользователи и Работники, являясь субъектами персональных данных, - имеют право на получение информации, касающейся обработки их Данных, в том числе содержащей:</p>
-<p><span>— подтверждение факта обработки Данных в Компании;</span></p>
-<p><span>— правовые основания и цели обработки Данных;</span></p>
-<p><span>— применяемые в Компании способы обработки Данных;</span></p>
-<p><span>— наименование и место нахождения Компании, сведения о лицах, которые имеют доступ к Данным или которым могут быть раскрыты Данные на основании договора с Компанией или на основании федерального закона;</span></p>
-<p><span>— обрабатываемые Данные, относящиеся к соответствующему субъекту персональных данных, источник их получения, если иной порядок представления таких данных не предусмотрен федеральным законом;</span></p>
-<p><span>— сроки обработки Данных, в том числе сроки их хранения;</span></p>
-<p><span>—  порядок осуществления субъектом персональных данных прав, предусмотренных законодательством Российской Федерации в области Данных;</span></p>
-<p><span>— информацию об осуществленной или предполагаемой трансграничной передаче Данных;</span></p>
-<p><span>— наименование организации или фамилию, имя, отчество и адрес лица, осуществляющего обработку Данных по поручению Компании, если обработка поручена или будет поручена такой организации или лицу;</span></p>
-<p><span>— иные сведения, предусмотренные законодательством Российской Федерации в области персональных данных.</span></p>
-<p><span>Для получения этой информации Пользователи и Работники вправе обратиться к Компании по контактным данным, указанным в п.8.14 ниже.</span></p>
-<p><span>8.2. </span>Субъекты персональных данных вправе требовать от Компании уточнения их Данных, их блокирования или уничтожения в случае, если Данные являются неполными, устаревшими, неточными, незаконно полученными или не являются необходимыми для заявленной цели обработки, а также принимать предусмотренные законом меры по защите своих прав.</p>
-<p><span>8.3. </span>Указанные выше сведения должны быть предоставлены субъекту персональных данных Компанией в доступной форме, и в них не должны содержаться Данные, относящиеся к другим субъектам персональных данных, за исключением случаев, если имеются законные основания для раскрытия таких Данных.</p>
-<p><span>8.4. </span>Указанные в настоящем разделе сведения сообщаются субъекту персональных данных или его представителю, а также им предоставляется возможность ознакомления с соответствующими Данными при обращении либо в течение 30 дней с даты получения запроса субъекта персональных данных или его представителя. Запрос должен содержать:</p>
-<p><span> - номер основного документа, удостоверяющего личность субъекта персональных данных или его представителя, сведения о дате выдачи указанного документа и выдавшем его органе; <br /> - сведения, подтверждающие участие субъекта персональных данных в правоотношениях с Компанией, либо сведения, иным образом подтверждающие факт обработки персональных данных в Компании, подпись субъекта персональных данных или его представителя.  Запрос может быть направлен в форме электронного документа и подписан электронной подписью в соответствии с законодательством Российской Федерации.</span></p>
-<p><span>8.5. </span>Если указанные в настоящем разделе сведения, а также обрабатываемые Данные были предоставлены для ознакомления субъекту персональных данных по его запросу, субъект персональных данных вправе обратиться повторно в Компанию или направить повторный запрос в целях получения указанных сведений и ознакомления с такими Данными не ранее чем через тридцать дней после первоначального обращения или направления первоначального запроса, если более короткий срок не установлен федеральным законом, принятым в соответствии с ним нормативным правовым актом или договором, стороной которого либо выгодоприобретателем или поручителем по которому является субъект персональных данных.</p>
-<p><span>8.6. </span>Субъект персональных данных вправе обратиться повторно в Компанию или направить повторный запрос в целях получения указанных выше сведений, а также в целях ознакомления с обрабатываемыми Данными до истечения срока, указанного в предыдущем пункте, в случае, если такие сведения и (или) обрабатываемые Данные не были предоставлены ему для ознакомления в полном объеме по результатам рассмотрения первоначального обращения. Повторный запрос должен содержать обоснование направления повторного запроса.</p>
-<p><span>8.7. </span>Компания вправе отказать субъекту персональных данных в выполнении повторного запроса, не соответствующего установленным законом условиям. Такой отказ должен быть мотивированным.</p>
-<p><span>8.8. </span>Право субъекта персональных данных на доступ к его Данным может быть ограничено в соответствии с федеральными законами, в том числе, если доступ субъекта персональных данных к его Данным нарушает права и законные интересы третьих лиц.</p>
-<p><span>8.9. </span>Компания сообщает в Роскомнадзор по запросу этого органа необходимую информацию в течение тридцати дней с даты получения такого запроса.</p>
-<p><span>8.10. </span>Все поступающие обращения и запросы регистрируются как входящая корреспонденция, а также учитываются в соответствующих реестрах Компании.</p>
-<p><span>8.11. </span>Обращения и запросы рассматриваются Ответственным за обработку персональных данных. При возникновении вопросов или необходимости уточнения содержания запроса Ответственный за обработку персональных данных связывается с лицом, направившем запрос / обращение по имеющемся в нем контактным данным.</p>
-<p><span>8.12. </span>Ответ на запрос / обращение оформляется в той же форме, в которой соответствующий запрос / обращение был получен (например, по электронной почте или в бумажной форме), если иное прямо не установлено законодательством Российской Федерации или иная просьба не содержится в запросе / обращении.</p>
-<p><span>8.13. </span>Ответ на обращение субъекта персональных данных может быть подписан Ответственным за обработку персональных данных или Генеральным директором Компании. Ответ на запрос Роскомнадзора подписывается Генеральным директором Компании или лицом, действующим по его поручению на основании доверенности, выданной от имени Компании.</p>
-<p><span>8.14. </span>Запрос / обращение субъекта персональных данных, а также отзыв его согласия на обработку персональных данных направляется в свободной форме по следующему адресу:</p>
-<p><span>ООО «Альватто»</span></p>
-<p><span>Почтовый адрес: Город Москва, Вн. Тер. Г. Муниципальный округ Матушкино, город Зеленоград, к. 457, </span></p>
-<p>Электронная почта: alvatto@mail.ru</p>
-<p><span>Телефон: 8 (499) 842-88-88</span></p>
-<p><span>Рабочее время: с понедельника по пятницу с 10.00 до 18.00, кроме государственных праздников в России.</span></p>
-<p> </p>
-<p><span>Приложение. Сведения о реализуемых требованиях к защите персональных данных.</span></p>
-<p><span>По мере необходимости и с учетом угроз, актуальных для информационных систем, обеспечивающих функционирование Сайта и обработку Данных, Компания реализует следующие требования к защите Данных или обеспечивает их реализацию привлекаемыми для обработки Данных лицами:</span></p>
-<p><span>— организация режима обеспечения безопасности помещений, в которых размещена информационная система, препятствующего возможности неконтролируемого проникновения или пребывания в этих помещениях лиц, не имеющих права доступа в эти помещения;</span></p>
-<p><span>— обеспечение сохранности носителей Данных;</span></p>
-<p><span>— утверждение руководителем оператора документа, определяющего перечень лиц, доступ которых к Данным, обрабатываемым в информационной системе, необходим для выполнения ими служебных (трудовых) обязанностей;</span></p>
-<p><span>— использование средств защиты информации, прошедших процедуру оценки соответствия требованиям законодательства Российской Федерации в области обеспечения безопасности информации, в случае, когда применение таких средств необходимо для нейтрализации актуальных угроз;</span></p>
-<p><span>— назначение должностного лица (работника) ответственным за обеспечение безопасности персональных данных в информационной системе;</span></p>
-<p><span>— обеспечение возможности доступа к содержанию электронного журнала сообщений б исключительно для должностных лиц (работников) оператора или уполномоченного лица, которым сведения, содержащиеся в указанном журнале, необходимы для выполнения служебных (трудовых) обязанностей.</span></p>
-<p><span>— обеспечение автоматической регистрации в электронном журнале безопасности изменения полномочий сотрудника оператора по доступу к Данным, содержащимся в информационной системе;</span></p>
-<p><span>— создание структурного подразделения, ответственного за обеспечение безопасности Данных в информационной системе, либо возложение на одно из структурных подразделений функций по обеспечению такой безопасности.</span></p>
-<p><span> </span></p>
-        </div>
-        
-        
-    </section>
-    
-    
-    
-    </main>
-    <!-- footer start -->
-    <footer class="footer-out">
+<!-- footer start -->
+<footer class="footer-out">
     <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();
-   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-   ym(95636209, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true,
-        webvisor:true
-   });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/95636209" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-        <div class="container container-1440">
-            <div class="footer-item">
-                <div class="footer-logo-out">
-                    <div class="footer-logo-item">
-                        <div class="footer-logo-picture">
-                            <a href="../index.html"><img src="../assets/img/header-logo-white.svg" alt="" class="header-logo-image img-fluid"></a>
-                        </div>
-                        <div class="footer-logo-description">
-                            <p class="footer-logo-description-text  font-16"> Alvatto © 2023 </p>
-                        </div>
+        ym(95636209, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/95636209" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <div class="container container-1440">
+        <div class="footer-item">
+            <div class="footer-logo-out">
+                <div class="footer-logo-item">
+                    <div class="footer-logo-picture">
+                        <a href="/"><img src="/assets/img/header-logo-white.svg" alt="" class="header-logo-image img-fluid"></a>
+                    </div>
+                    <div class="footer-logo-description">
+                        <p class="footer-logo-description-text  font-16"> Alvatto © 2023 </p>
                     </div>
                 </div>
-                <div class="footer-menu-out">
-                    <div class="footer-menu-item">
-                        <div class="footer-menu-item-column">
-                            <ul class="footer-menu-item-ul">
-                                <li class="footer-menu-item-li font-16">
-                                    <a href="../katalog/kofemashinyi/index.html" class="footer-menu-item-href">Кофемашины</a>
-                                </li>
-                                <li class="footer-menu-item-li font-16">
-                                    <a href="../katalog/aksessuary-i-komplektuyushchie/index.html" class="footer-menu-item-href">Аксессуары и комплектующие</a>
-                                </li>
-                                <li class="footer-menu-item-li font-16">
-                                    <a href="../katalog/kofe/index.html" class="footer-menu-item-href">Кофе</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer-menu-item-column">
-                            <ul class="footer-menu-item-ul">
-                                <li class="footer-menu-item-li font-16">
-                                    <a href="../o-brende/index.html" class="footer-menu-item-href">О бренде</a>
-                                </li>
-                                <li class="footer-menu-item-li font-16">
-                                    <a href="../service/index.html" class="footer-menu-item-href">Сервис</a>
-                                </li>
-                                <li class="footer-menu-item-li font-16">
-                                    <a href="../kontaktyi/index.html" class="footer-menu-item-href">Контакты</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer-menu-item-column">
-                            <ul class="footer-menu-item-ul">
-                                <!--<li class="footer-menu-item-li font-16">-->
-                                <!--    <a href="" class="footer-menu-item-href">Статьи</a>-->
-                                <!--</li>-->
-                                <li class="footer-menu-item-li font-16">
-                                    <a href="index.html" class="footer-menu-item-href">Политика конфиденциальности</a>
-                                </li>
-                                <li class="footer-menu-item-li font-16">
-                                    <a href="../polzovatelskoe-soglashenie/index.html" class="footer-menu-item-href">Пользовательское соглашение</a>
-                                </li>
-                                <li class="footer-menu-item-li font-16">
-                                    <a href="../publichnaya-oferta/index.html" class="footer-menu-item-href">Публичная оферта</a>
-                                </li>
-                            </ul>
-                        </div>
+            </div>
+            <div class="footer-menu-out">
+                <div class="footer-menu-item">
+                    <div class="footer-menu-item-column">
+                        <ul class="footer-menu-item-ul">
+                            <li class="footer-menu-item-li font-16">
+                                <a href="catalog" class="footer-menu-item-href">Кофемашины</a>
+                            </li>
+                            <li class="footer-menu-item-li font-16">
+                                <a href="catalog" class="footer-menu-item-href">Аксессуары и комплектующие</a>
+                            </li>
+                            <li class="footer-menu-item-li font-16">
+                                <a href="catalog" class="footer-menu-item-href">Кофе</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu-item-column">
+                        <ul class="footer-menu-item-ul">
+                            <li class="footer-menu-item-li font-16">
+                                <a href="/o-brende" class="footer-menu-item-href">О бренде</a>
+                            </li>
+                            <li class="footer-menu-item-li font-16">
+                                <a href="/service" class="footer-menu-item-href">Сервис</a>
+                            </li>
+                            <li class="footer-menu-item-li font-16">
+                                <a href="/kontaktyi" class="footer-menu-item-href">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu-item-column">
+                        <ul class="footer-menu-item-ul">
+                            <!--<li class="footer-menu-item-li font-16">-->
+                            <!--    <a href="" class="footer-menu-item-href">Статьи</a>-->
+                            <!--</li>-->
+                            <li class="footer-menu-item-li font-16">
+                                <a href="/politika-konfidencialnosti" class="footer-menu-item-href">Политика конфиденциальности</a>
+                            </li>
+                            <li class="footer-menu-item-li font-16">
+                                <a href="/polzovatelskoe-soglashenie" class="footer-menu-item-href">Пользовательское соглашение</a>
+                            </li>
+                            <li class="footer-menu-item-li font-16">
+                                <a href="/publichnaya-oferta" class="footer-menu-item-href">Публичная оферта</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="footer-contact-out">
-                    <div class="footer-contact-item">
-                        <div class="footer-contact-phone-out">
-                            <div class="footer-contact-phone-item">
-                                <a href="" class="footer-contact-phone-item-a">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26">
-                                        <path d="M16 1H8C6.34 1 5 2.34 5 4v16c0 1.66 1.34 3 3 3h8c1.66 0 3-1.34 3-3V4c0-1.66-1.34-3-3-3zm1 17H7V4h10v14zm-3 3h-4v-1h4v1z"/>
-                                    </svg>
-                                    <span class="footer-contact-phone-item-span font-16">
+            </div>
+            <div class="footer-contact-out">
+                <div class="footer-contact-item">
+                    <div class="footer-contact-phone-out">
+                        <div class="footer-contact-phone-item">
+                            <a href="" class="footer-contact-phone-item-a">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+                                    <path d="M16 1H8C6.34 1 5 2.34 5 4v16c0 1.66 1.34 3 3 3h8c1.66 0 3-1.34 3-3V4c0-1.66-1.34-3-3-3zm1 17H7V4h10v14zm-3 3h-4v-1h4v1z"/>
+                                </svg>
+                                <span class="footer-contact-phone-item-span font-16">
                                         8 499 842 88 88 
                                     </span>
-                                </a>
-                            </div>
+                            </a>
                         </div>
-                        <div class="footer-contact-icon-out">
-                            <div class="footer-contact-icon-item">
-                                <a href="" class="footer-contact-icon-item-a">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16" width="20" height="20">
-                                        <path d="M13.608 2.325A7.88 7.88 0 0 0 7.998 0C3.625 0 .067 3.556.065 7.928c0 1.397.365 2.76 1.06 3.964L0 16l4.204-1.102a7.928 7.928 0 0 0 3.79.965h.004c4.37 0 7.93-3.557 7.93-7.93a7.88 7.88 0 0 0-2.32-5.608zm-5.61 12.2h-.003a6.583 6.583 0 0 1-3.355-.92l-.24-.143-2.496.654.666-2.43-.157-.25a6.573 6.573 0 0 1-1.007-3.508A6.6 6.6 0 0 1 8 1.338a6.55 6.55 0 0 1 4.66 1.934 6.55 6.55 0 0 1 1.93 4.662 6.6 6.6 0 0 1-6.592 6.59zm2.26-5.58c-.18-.068-.313-.1-.445.098s-.512.644-.627.777c-.116.132-.23.148-.43.05-.198-.1-.836-.31-1.593-.984-.59-.525-.987-1.174-1.102-1.373-.115-.198-.012-.305.087-.404.09-.09.2-.232.298-.348.1-.116.132-.198.198-.33.066-.133.033-.248-.017-.348-.05-.1-.446-1.074-.61-1.47-.162-.387-.325-.334-.447-.34a7.945 7.945 0 0 0-.38-.007.728.728 0 0 0-.53.247c-.18.2-.692.678-.692 1.653s.71 1.917.81 2.05c.098.132 1.396 2.133 3.384 2.99.473.205.842.327 1.13.418.474.15.906.13 1.248.08.38-.058 1.172-.48 1.338-.943.165-.463.165-.86.115-.942-.05-.083-.182-.133-.38-.232-.198-.1-1.172-.578-1.354-.644z"/>
-                                    </svg>
-                                </a>
-                                <a href="" class="footer-contact-icon-item-a">
-                                    <svg id ="telegram" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20" width="20" height="20">
-                                        <path d="M3.724 10.49c1.17-.645 2.474-1.182 3.693-1.722a192.13 192.13 0 0 1 6.33-2.564c.415-.138 1.16-.273 1.232.34-.04.87-.206 1.732-.318 2.595-.286 1.897-.617 3.788-.94 5.68-.11.63-.9.957-1.405.553-1.213-.82-2.437-1.63-3.635-2.47-.393-.4-.028-.972.322-1.257 1-.985 2.06-1.822 3.008-2.858.255-.618-.5-.098-.75.062-1.368.943-2.703 1.944-4.146 2.773-.737.405-1.596.06-2.333-.168-.66-.273-1.628-.55-1.06-.966z" fill="#fff"></path>
-                                    </svg>
-                                </a>
-                            </div>
+                    </div>
+                    <div class="footer-contact-icon-out">
+                        <div class="footer-contact-icon-item">
+                            <a href="" class="footer-contact-icon-item-a">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16" width="20" height="20">
+                                    <path d="M13.608 2.325A7.88 7.88 0 0 0 7.998 0C3.625 0 .067 3.556.065 7.928c0 1.397.365 2.76 1.06 3.964L0 16l4.204-1.102a7.928 7.928 0 0 0 3.79.965h.004c4.37 0 7.93-3.557 7.93-7.93a7.88 7.88 0 0 0-2.32-5.608zm-5.61 12.2h-.003a6.583 6.583 0 0 1-3.355-.92l-.24-.143-2.496.654.666-2.43-.157-.25a6.573 6.573 0 0 1-1.007-3.508A6.6 6.6 0 0 1 8 1.338a6.55 6.55 0 0 1 4.66 1.934 6.55 6.55 0 0 1 1.93 4.662 6.6 6.6 0 0 1-6.592 6.59zm2.26-5.58c-.18-.068-.313-.1-.445.098s-.512.644-.627.777c-.116.132-.23.148-.43.05-.198-.1-.836-.31-1.593-.984-.59-.525-.987-1.174-1.102-1.373-.115-.198-.012-.305.087-.404.09-.09.2-.232.298-.348.1-.116.132-.198.198-.33.066-.133.033-.248-.017-.348-.05-.1-.446-1.074-.61-1.47-.162-.387-.325-.334-.447-.34a7.945 7.945 0 0 0-.38-.007.728.728 0 0 0-.53.247c-.18.2-.692.678-.692 1.653s.71 1.917.81 2.05c.098.132 1.396 2.133 3.384 2.99.473.205.842.327 1.13.418.474.15.906.13 1.248.08.38-.058 1.172-.48 1.338-.943.165-.463.165-.86.115-.942-.05-.083-.182-.133-.38-.232-.198-.1-1.172-.578-1.354-.644z"/>
+                                </svg>
+                            </a>
+                            <a href="" class="footer-contact-icon-item-a">
+                                <svg id="telegram" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20" width="20" height="20">
+                                    <path d="M3.724 10.49c1.17-.645 2.474-1.182 3.693-1.722a192.13 192.13 0 0 1 6.33-2.564c.415-.138 1.16-.273 1.232.34-.04.87-.206 1.732-.318 2.595-.286 1.897-.617 3.788-.94 5.68-.11.63-.9.957-1.405.553-1.213-.82-2.437-1.63-3.635-2.47-.393-.4-.028-.972.322-1.257 1-.985 2.06-1.822 3.008-2.858.255-.618-.5-.098-.75.062-1.368.943-2.703 1.944-4.146 2.773-.737.405-1.596.06-2.333-.168-.66-.273-1.628-.55-1.06-.966z" fill="#fff"></path>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
-    <!-- footer end -->
-     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous">
-    </script>
-    <!-- <script src="/assets/js/daterangepicker.js"></script> -->
-    <!-- <script src="https://malsup.github.com/jquery.form.js"></script> -->
-    <script src="../assets/js/jquery.maskedinput.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-    <script src="../assets/js/script.js" defer></script>
-<script src="../assets/components/sweetalert2/js/sweetalert2.all.min.js"></script>
-<script src="../assets/components/sweetalert2/js/default.min.js"></script>
+    </div>
+</footer>
+<!-- footer end -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous">
+</script>
+<!-- <script src="/assets/js/daterangepicker.js"></script> -->
+<!-- <script src="https://malsup.github.com/jquery.form.js"></script> -->
+<script src="assets/js/jquery.maskedinput.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="assets/js/script.js" defer></script>
+<script defer>
+
+    //const headerTop = document.querySelector('.header');
+    //const pdTop = document.querySelector('#pdtop');
+    const boxVideoTitle = document.querySelector('.title-block-bg-video');
+    window.addEventListener('scroll', function() {
+        //console.log(window.pageYOffset)
+        const sliderTopMargin = window.pageYOffset ;
+
+        boxVideoTitle.style.marginTop = sliderTopMargin +"px";
+
+        //if(window.pageYOffset < 5) {
+        //  headerTop.classList.remove('fixed');
+        //}
+    });
+</script>
+<script src="assets/components/sweetalert2/js/sweetalert2.all.min.js"></script>
+<script src="assets/components/sweetalert2/js/default.min.js"></script>
 <script>document.addEventListener('DOMContentLoaded', function(){ SweetAlert2.initialize({"position":"top-end","timer":3000,"showConfirmButton":false,"toast":true,"width":"19rem"},{"ajaxform":true,"minishop2":true,"office":true,"msoneclick":true}) })</script>
-<script src="../assets/components/minishop2/js/web/default%EF%B9%96v=667ec14321.js"></script>
-<script src="../assets/components/minishop2/js/web/lib/jquery.jgrowl.min.js"></script>
-<script src="../assets/components/minishop2/js/web/message_settings.js"></script>
-<script src="../assets/components/ajaxform/js/default.js"></script>
-<script type="text/javascript">AjaxForm.initialize({"assetsUrl":"\/assets\/components\/ajaxform\/","actionUrl":"\/assets\/components\/ajaxform\/action.php","closeMessage":"\u0437\u0430\u043a\u0440\u044b\u0442\u044c \u0432\u0441\u0435","formSelector":"form.ajax_form","pageId":37});</script>
+<script src="assets/components/minishop2/js/web/default%EF%B9%96v=667ec14321.js"></script>
+<script src="assets/components/minishop2/js/web/lib/jquery.jgrowl.min.js"></script>
+<script src="assets/components/minishop2/js/web/message_settings.js"></script>
+<script src="assets/components/ajaxform/js/default.js"></script>
+<script type="text/javascript">AjaxForm.initialize({"assetsUrl":"\/assets\/components\/ajaxform\/","actionUrl":"\/assets\/components\/ajaxform\/action.php","closeMessage":"\u0437\u0430\u043a\u0440\u044b\u0442\u044c \u0432\u0441\u0435","formSelector":"form.ajax_form","pageId":1});</script>
 </body>
 
 </html>

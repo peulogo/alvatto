@@ -1,9 +1,14 @@
-<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect width="64" height="64" fill="url(#pattern0)"/>
-<defs>
-<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image0_23_21" transform="scale(0.015625)"/>
-</pattern>
-<image id="image0_23_21" width="64" height="64" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAACvklEQVR4nO2Z24vNURTHP03OPCjkmlFyeVHupbz5DzQmilyaIqXhwYtEeeBBzYPLSF6YkpASSpEU8yLUMOQWUXiR2zy4zBgMM/rVVqfVPnPOMb+1zk7rU+vpt9vftfbvt/daa//AcRzHcRzHcRxnaAYTNTMGEzUz+hMIVtoPywX4kkDA0rotF+CNEG/EnmXCh9eW4neF+Bbs2Sp86LIUvyjEW7HngPDhvKX4PiF+GnsuCB/2W4o3C/FO7LkX2QIPgZ5gN4EWoF5DfIEQ/waMwI4sqO8VZoc7QIOGAz+F0FzsWFRliswO7ULeTjwQIuuwY9M/1Am5Z6p2IdCGHcdKvOWsHhkT7JB4fjtvJ9YKgfvY8VhoX46cQePFmM95OzFFCPwGxqFPQ0R3cmTcaO0FyHgqRJrQZ03k04+xVIx7pOHMESGS7TttjgrNvZExhUi5nlWOudMkRF6gz0uhuSQS/KnINpmv4czIUAQVi81Bj9lC65PI72OBK5EMcdyyMdqpqLV9iAZoFfAuEvzzcCCqsV473xZxQ2htBlaHPiBW/LwCpqPMROBXkegAMENBZ2rYy3ILlKr8bmn0AKW4LsR3kT87Kix5s05wm3FzxgbhxDMFjSdlAu8Pp7/6Jx8jq737hEOLsen+ukMforHtquKccOww+dEm5n4fCqJGrQuPPIqiDzn14IUQcPHcK0iQAvBWwdHlYs6PKb11SatwtoPh01HDe4eqmRnJ1fMYXuk7IOZbSA1orjAHp2SxLnFYXE0gqEqtS+OcmAZ8TSC4ctYLzEKJlgQCLGdZc6bKiYhodt+2Ejs2Ru4hMjtoIV4PXCux+u0hE2iRlbtnS2ifAeowrP07E/jc/9qlWhRHoxLJDCc1fntVSl3o02UnaGE94VBOgknA7vC/sFcx6L7wV2gPMKHWQTuO4ziO4ziOw3/BH6fXFNOOsvjIAAAAAElFTkSuQmCC"/>
-</defs>
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"
+ preserveAspectRatio="xMidYMid meet">
+<g transform="translate(0.000000,64.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="none">
+<path d="M103 461 c4 -33 20 -100 36 -150 l29 -91 -49 0 c-27 0 -49 -5 -49
+-10 0 -6 18 -28 40 -50 l40 -40 140 0 141 0 46 48 46 47 -55 3 c-49 3 -55 5
+-51 22 3 11 20 24 39 30 49 16 104 71 104 104 0 31 -32 66 -60 66 -17 0 -20 7
+-20 40 l0 40 -191 0 -192 0 6 -59z m331 -13 c-11 -62 -25 -113 -46 -171 l-20
+-57 -78 0 -78 0 -20 58 c-21 57 -35 108 -46 170 l-5 32 149 0 150 0 -6 -32z
+m83 -65 c4 -11 -4 -26 -25 -45 -42 -37 -54 -36 -40 5 19 57 51 77 65 40z m-97
+-213 c-8 -5 -67 -10 -130 -10 -63 0 -122 5 -130 10 -10 7 33 10 130 10 97 0
+140 -3 130 -10z"/>
+</g>
 </svg>
