@@ -636,9 +636,11 @@ main {
 }
 
 .title-block-bg-video {
-    height: 100vh;
+    height: 100%;
     transition: all 1ms ease-in-out;
     background-image: url(../images/38873386-coffee-foam-texture.jpg);
+    background-position: center;
+    background-size: contain;
 }
 
 .background-video {
