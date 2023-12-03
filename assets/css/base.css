@@ -3272,7 +3272,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     color: #fff;
     fill: #fff;
     padding-right: 2.5rem;
-    margin-bottom: 2.5rem;
 }
 
 .footer__contacts-container {
@@ -3320,6 +3319,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     padding-top: 1.5rem;
     margin-bottom: 1rem;
     border-top: 1px solid;
+    width: 100%;
 }
 
 .footer__end__title {
@@ -3391,5 +3391,11 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 @media screen and (min-width: 1024px){
     .footer__end {
         margin-top: 1.5rem;
+    }
+}
+@media screen and (max-width: 768px){
+    .footer__links__items{
+        columns: 2;
+        margin-bottom: 2.5rem;
     }
 }
